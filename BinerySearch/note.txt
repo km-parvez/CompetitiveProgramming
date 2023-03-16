@@ -1,0 +1,9 @@
+while (low < high) is used when you're searching the range [low, high). When updating high, use high = mid. When updating low, use low = mid + 1.
+while (high - low > 1) is used when you're searching the range (low, high). When updating high, use high = mid. When updating low, use low = mid.
+while (low <= high) is used when you're searching the range [low, high]. When updating high, use high = mid - 1. When updating low, use low = mid + 1.
+
+	****Check Limit range please ;
+	
+[low,hi] => while(hi-low>=0) low=mid+1; hi=mid-1;
+[low,hi) => while(hi-low>0)  low=mid+1; hi=mid;
+(low,hi) => while(hi-low>1)  low=mid; 	hi=mid;
