@@ -5,53 +5,126 @@
 #define whatis2(x,y) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<'\n'
 #define whatis3(x,y,z) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<","<<#z<<"="<<z<<'\n'
 #define whatisArray(arr,n) cout<<#arr<<", Size: "<<n<<'\n';for(int m=0;m<n;m++)  cout<<arr[m]<<" ";cout<<'\n';
-#define whatArray2D(arr,m,n) cout<<#arr<<", Size: "<<m<<","<<n<<'\n';for(int mm=0;mm<m;mm++){for(int nn=0;nn<n;nn++)cout<<arr[mm][nn]<<" ";cout<<'\n';} 
 #define caseprint(caseno,ans) cout<<"Case "<<caseno<<": "<<ans<<'\n'
 #define endl '\n'
 #define all(v) v.begin(),v.end()
+#define mod 1000000007
+#define MX 200005
 
 using namespace std;
 using ll = long long;
-constexpr ll mod = 1000000007;
-constexpr int MX = 200005;
+vector<int> g[MX];
+int parent[MX];
+int level[MX];
+int parseTable[MX][32];
+int n;
+void dfs(int par,int u){
+    for(int i=0; i<g[u].size(); i++) {
+        int v= g[u][i];
+        if(v!=par){
+            level[v]=level[u]+1;
+            parent[v]=u;
+            dfs(u,v);
+        }
+    }
+}
+void createParseTable(){
 
-void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
-ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
-ll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }
-ll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }
-ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}
-ll modinverse(ll x){return modpow(x,mod-2);}
-ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
+    memset(parseTable,-1,sizeof(parseTable));
+    for(int i=1; i<=n; i++) {
+        parseTable[i][0]=parent[i];
+    }
+    int lgn = log2(n)+1;
+    for(int j=1;j<lgn; j++) {
+        for(int i=1; i<=n; i++) {
+            if(parseTable[i][j-1]!=-1)
+            parseTable[i][j] = parseTable[parseTable[i][j-1]][j-1];
+        }
+    }
+}
+int query(int p,int q){
+    if(level[p]<level[q])swap(p,q);
+// p should has a bigger level
+    int lgn = log2(n)+1;
+    for(int i=lgn; i>=0; i--) {
+        if((level[p]-(1<<i))>=level[q]){
+            p=parseTable[p][i];
+        }
+    }
+    if(p==q)return p;
+
+    for(int i=lgn; i>=0; i--) {
+        if(parseTable[p][i]!=-1&&parseTable[p][i]!=parseTable[q][i]){
+            p = parseTable[p][i];
+            q = parseTable[q][i];
+        }
+    }
+    return parent[p];
+
+}
 
 void solve(int caseno){
-    int n;
-    cin>>n;
-    ll nw = 1;
-    for(int i=0; i<n; i++) {
-        int has = 0;
-        int trn = 0;
-        for(int j=0; j<n; j++) {
-            if(has>=nw){
-                has=0;
-                trn^=1;
-            }
-            has++;
-            cout<<trn;
+    int q;
+    cin>>n>>q;
+    for(int i=0; i<n-1; i++) {
+        int x,y;
+        cin>>x>>y;
+        g[x].emplace_back(y);
+        g[y].emplace_back(x);
+    }
+    level[1]=0;
+    memset(parent,-1,sizeof(parent));
+    parent[1]=-1;
+    dfs(-1,1);
+    //whatisArray(level,n+1);
+    createParseTable();
+/*    for(int i=1; i<=n; i++) {
+        cout<<i<<" : ";
+        for(int j=0; j<20; j++) {
+            cout<<parseTable[i][j]<<' ';
         }
         cout<<'\n';
-        nw*=2;
+    }*/
+    while(q--){
+        int k;cin>>k;
+        vector<int> val(k);
+        int mxlvl = -1; int nod; 
+        for(int i=0; i<k; i++) {
+            cin>>val[i];
+            if(level[val[i]]>mxlvl){
+                mxlvl = level[val[i]];
+                nod = val[i];
+            }
+        }
+        bool ok = true;
+        for(int i=0; i<k; i++) {
+            if(val[i]==1 || val[i]==nod||level[val[i]]==1)continue;
+            int common = query(val[i],nod);
+           // whatis3(common,val[i],nod);
+            if(common!=val[i]&&parent[val[i]]!=common){
+                ok = false;
+                break;
+            }
+        }
+        if(ok)
+            cout<<"YES"<<'\n'; 
+        else 
+            cout<<"NO"<<'\n';          
     }
+
+    
+
     return;
     
 }
 int main()
 {
     ios::sync_with_stdio(0);
-    cin.tie(0);
     int cases,caseno=0;
-    cin>>cases;
+    cases=1;
     while(cases--){
         solve(++caseno);
+        cout<<'\n';
     }
     return 0;
-}           
+}

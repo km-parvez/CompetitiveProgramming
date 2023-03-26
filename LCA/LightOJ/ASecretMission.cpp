@@ -48,7 +48,7 @@ void createParseTable(){
 int query(int p,int q){
     if(level[p]<level[q])swap(p,q);
 // p should has a bigger level
-    int lgn = log2(p)+1;
+    int lgn = log2(n)+1;
     for(int i=lgn; i>=0; i--) {
         if(level[p]-(1<<i)>=level[q]){
             p=parseTable[p][i];
@@ -56,6 +56,7 @@ int query(int p,int q){
     }
     if(p==q)return p;
     for(int i=lgn; i>=0; i--) {
+
         if(parseTable[p][i]!=-1&&parseTable[p][i]!=parseTable[q][i]){
             p = parseTable[p][i];
             q = parseTable[q][i];
