@@ -4,15 +4,187 @@
 		"selected_items":
 		[
 			[
+				"cout",
+				"cout<<${1:}<<'${2:\\n}';"
+			],
+			[
 				"wha",
-				"whatis1"
+				"whatis2"
+			],
+			[
+				"tmp",
+				"tmpl-left"
+			],
+			[
+				"em",
+				"emplace(${1:});"
+			],
+			[
+				"pa",
+				"priority_queue<${1:int}, vector<${1:int}>, greater<${1:int}>>"
 			],
 			[
 				"zz",
 				"zzcodestarter\tc++ starting without test case."
 			],
 			[
-				"cout",
+				"sor",
+				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
+			],
+			[
+				"pop",
+				"pop();"
+			],
+			[
+				"LL",
+				"LLONG_MAX"
+			],
+			[
+				"what",
+				"whatis3"
+			],
+			[
+				"whatis",
+				"whatis2"
+			],
+			[
+				"wh",
+				"while"
+			],
+			[
+				"sro",
+				"sort(${1:v}.begin(),${1:v}.end());"
+			],
+			[
+				"for",
+				"for(int ${1:i}=${2:0}; ${1:i}<${3:n}; ${1:i}${4:++}) {$5}"
+			],
+			[
+				"socr",
+				"score"
+			],
+			[
+				"po",
+				"pop();"
+			],
+			[
+				"pri",
+				"priority_queue<${1:int}>"
+			],
+			[
+				"emp",
+				"empty()"
+			],
+			[
+				"so",
+				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
+			],
+			[
+				"cou",
+				"cout<<${1:}<<'${2:\\n}';"
+			],
+			[
+				"only",
+				"onlysc"
+			],
+			[
+				"pus",
+				"push_back(${1:});"
+			],
+			[
+				"case",
+				"cases"
+			],
+			[
+				"pu",
+				"push_back(${1:});"
+			],
+			[
+				"SOR",
+				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
+			],
+			[
+				"se",
+				"set<int> "
+			],
+			[
+				"eme",
+				"emplace_back(${1:});"
+			],
+			[
+				"set",
+				"set<int> "
+			],
+			[
+				"L",
+				"LLONG_MAX"
+			],
+			[
+				"z",
+				"zzcodestarter\tc++ starting with test case."
+			],
+			[
+				"c",
+				"clear();"
+			],
+			[
+				"sort",
+				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
+			],
+			[
+				"MI",
+				"LLONG_MIN"
+			],
+			[
+				"fi",
+				"first"
+			],
+			[
+				"sum",
+				"sumb"
+			],
+			[
+				"ps",
+				"push_back(${1:});"
+			],
+			[
+				"righ",
+				"right"
+			],
+			[
+				"right",
+				"rightsum"
+			],
+			[
+				"cot",
+				"vector<int> "
+			],
+			[
+				"um",
+				"unmatch"
+			],
+			[
+				"vce",
+				"vector<int> "
+			],
+			[
+				"COUT",
+				"cout<<${1:}<<'${2:\\n}';"
+			],
+			[
+				"w",
+				"whatis1"
+			],
+			[
+				"linene",
+				"lineneg"
+			],
+			[
+				"new",
+				"newlow"
+			],
+			[
+				"cotu",
 				"cout<<${1:}<<'${2:\\n}';"
 			],
 			[
@@ -24,36 +196,8 @@
 				"hasr"
 			],
 			[
-				"for",
-				"for(int ${1:i}=${2:0}; ${1:i}<${3:n}; ${1:i}${4:++}) {$5}"
-			],
-			[
-				"em",
-				"emplace(${1:});"
-			],
-			[
 				"e",
 				"end()"
-			],
-			[
-				"se",
-				"set<int> "
-			],
-			[
-				"emp",
-				"emplace(${1:});"
-			],
-			[
-				"po",
-				"pop_back();"
-			],
-			[
-				"so",
-				"sort(${1:v}.begin(),${1:v}.end());"
-			],
-			[
-				"pri",
-				"priority_queue<${1:int}>"
 			],
 			[
 				"pw",
@@ -72,32 +216,12 @@
 				"sort(${1:v}.begin(),${1:v}.end());"
 			],
 			[
-				"wh",
-				"while"
-			],
-			[
 				"co",
 				"cout<<${1:}<<'${2:\\n}';"
 			],
 			[
 				"en",
 				"end()"
-			],
-			[
-				"cou",
-				"cout<<${1:}<<'${2:\\n}';"
-			],
-			[
-				"sor",
-				"sort(${1:v}.begin(),${1:v}.end());"
-			],
-			[
-				"sum",
-				"sumd"
-			],
-			[
-				"pop",
-				"pop_back();"
 			],
 			[
 				"__",
@@ -120,28 +244,8 @@
 				"pair<int,int> "
 			],
 			[
-				"case",
-				"cases"
-			],
-			[
 				"cuo",
 				"cout<<${1:}<<'${2:\\n}';"
-			],
-			[
-				"fi",
-				"first"
-			],
-			[
-				"sort",
-				"sort(${1:v}.begin(),${1:v}.end());"
-			],
-			[
-				"what",
-				"whatis3"
-			],
-			[
-				"cotu",
-				"cout<<'\\n';"
 			],
 			[
 				"mai",
@@ -162,14 +266,6 @@
 			[
 				"r",
 				"rbegin()"
-			],
-			[
-				"tmp",
-				"tmpmx"
-			],
-			[
-				"LL",
-				"LLONG_MAX"
 			],
 			[
 				"rihg",
@@ -198,10 +294,6 @@
 			[
 				"mask",
 				"maskb"
-			],
-			[
-				"pus",
-				"push_back(${1:});"
 			],
 			[
 				"forn",
@@ -260,10 +352,6 @@
 				"emplace_back(${1:});"
 			],
 			[
-				"right",
-				"rightmn"
-			],
-			[
 				"query",
 				"query_max_tree"
 			],
@@ -296,16 +384,8 @@
 				"vector<int> "
 			],
 			[
-				"z",
-				"zzcodestarter\tc++ starting with test case."
-			],
-			[
 				"casen",
 				"caseno"
-			],
-			[
-				"set",
-				"set<int> "
 			],
 			[
 				"hel",
@@ -356,10 +436,6 @@
 				"whatisArray"
 			],
 			[
-				"c",
-				"cin>>"
-			],
-			[
 				"vis",
 				"visx"
 			],
@@ -386,10 +462,6 @@
 			[
 				"dis",
 				"disy"
-			],
-			[
-				"whatis",
-				"whatis2"
 			],
 			[
 				"puhs",
@@ -442,78 +514,6 @@
 			[
 				"hi",
 				"hicost"
-			],
-			[
-				"mx",
-				"mx0"
-			],
-			[
-				"whati",
-				"whatis1"
-			],
-			[
-				"couN",
-				"cout<<\"NO\"<<'\\n';"
-			],
-			[
-				"sot",
-				"sort(${1:v}.begin(),${1:v}.end());"
-			],
-			[
-				"empl",
-				"emplace_back(${1:});"
-			],
-			[
-				"avg",
-				"avg2ll"
-			],
-			[
-				"fu",
-				"function<int(int, int)> dfs = [&](int par, int u){}"
-			],
-			[
-				"allo",
-				"allodd"
-			],
-			[
-				"Com",
-				"Compare"
-			],
-			[
-				"com",
-				"Compare"
-			],
-			[
-				"LO",
-				"LLONG_MAX"
-			],
-			[
-				"coutNo",
-				"cout<<\"NO\"<<'\\n';"
-			],
-			[
-				"pase",
-				"parseTable"
-			],
-			[
-				"INT_",
-				"INT_MIN"
-			],
-			[
-				"INT",
-				"INT_MAX"
-			],
-			[
-				"with",
-				"without"
-			],
-			[
-				"answer",
-				"answer1"
-			],
-			[
-				"answe",
-				"answer1"
 			]
 		]
 	},
@@ -523,16 +523,16 @@
 			"file": "AA.cpp",
 			"settings":
 			{
-				"buffer_size": 2045,
+				"buffer_size": 6647,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/CompititiveProgramming/Math/int_sqrt/int_sqrt.cpp",
+			"file": "/D/Projects/CompititiveProgramming/PriorityQueue/customPriotiryQueue.cpp",
 			"settings":
 			{
-				"buffer_size": 1417,
+				"buffer_size": 2502,
 				"line_ending": "Windows"
 			}
 		},
@@ -540,7 +540,7 @@
 			"file": "inputf.in",
 			"settings":
 			{
-				"buffer_size": 10,
+				"buffer_size": 31,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -549,7 +549,7 @@
 			"file": "outputf.out",
 			"settings":
 			{
-				"buffer_size": 2,
+				"buffer_size": 159,
 				"line_ending": "Windows"
 			}
 		}
@@ -565,6 +565,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"inden",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"pref",
 				"Preferences: Browse Packages"
@@ -588,10 +596,6 @@
 			[
 				"remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
 			],
 			[
 				"prv",
@@ -653,25 +657,37 @@
 	[
 		"/D/Projects/CompititiveProgramming",
 		"/D/Projects/CompititiveProgramming/BFS_DFS",
+		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation",
 		"/D/Projects/CompititiveProgramming/BinerySearch",
-		"/D/Projects/CompititiveProgramming/DisjointSet",
 		"/D/Projects/CompititiveProgramming/Interactive",
-		"/D/Projects/CompititiveProgramming/Math",
-		"/D/Projects/CompititiveProgramming/Math/int_sqrt",
-		"/D/Projects/CompititiveProgramming/Math/PascalTriangle",
-		"/D/Projects/CompititiveProgramming/Math/Seive"
+		"/D/Projects/CompititiveProgramming/LCA",
+		"/D/Projects/CompititiveProgramming/LCA/Implimentation",
+		"/D/Projects/CompititiveProgramming/PriorityQueue",
+		"/D/Projects/CompititiveProgramming/SegmentTree"
 	],
 	"file_history":
 	[
-		"/D/Projects/CompititiveProgramming/BinerySearch/note.txt",
+		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/dfs_graph.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/min_max_index_with_single_update.cpp",
+		"/D/Projects/CompititiveProgramming/CodeforcesAll/outputf.out",
+		"/D/Projects/CompititiveProgramming/PBDS_tree_order/find_kth_element_fast.cpp",
 		"/D/Projects/CompititiveProgramming/PBDS_tree_order/almostsimiler_but_fast.cpp",
 		"/D/Projects/CompititiveProgramming/PBDS_tree_order/countSmallerBiggerLeft.cpp",
+		"/D/Projects/CompititiveProgramming/BIT/bit.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_Max.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/nodeUpdateSegmentTree.cpp",
+		"/C/Users/user/Downloads/env (1)",
+		"/D/Projects/CompititiveProgramming/LCA/LCA_SPOJ.cpp",
+		"/D/Projects/CompititiveProgramming/LCA/LightOJ/ASecretMission.cpp",
+		"/D/Projects/CompititiveProgramming/CodeforcesAll/AA.cpp",
+		"/D/Projects/CompititiveProgramming/LCA/Implimentation/LCAimplimentation.cpp",
+		"/D/Projects/CompititiveProgramming/LCA/LCAimplimentation.cpp",
+		"/D/Projects/CompititiveProgramming/BinerySearch/note.txt",
 		"/C/Users/user/Downloads/realstatedb.sql",
 		"/D/Projects/CompititiveProgramming/Graph/dijkastra.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_both.cpp",
 		"/D/Projects/CompititiveProgramming/Math/PrimeFactorization/primefactorization.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/ex.cpp",
-		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/dfs_graph.cpp",
 		"/D/Projects/CompititiveProgramming/PrefixSum/Trick/gridPrefixSum.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/rangeMaxSubarraySum.cpp",
 		"/D/Projects/CompititiveProgramming/Math/Euler_totient_phi/phi_signle_1_to_n_both.cpp",
@@ -680,7 +696,6 @@
 		"/D/Projects/CompititiveProgramming/DP/bitmask/codeforces_321_D.cpp",
 		"/D/Projects/CompititiveProgramming/Math/GCD/gcd_set_common_remove.cpp",
 		"/D/Projects/CompititiveProgramming/Math/GCD/gcd_mask_common_remove.cpp",
-		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_Max.cpp",
 		"/D/Projects/CompititiveProgramming/DP/EasyLCS.cpp",
 		"/D/Projects/CompititiveProgramming/DP/CoinChange/coinChange_allow_same_coin.cpp",
 		"/D/Projects/CompititiveProgramming/Math/Extend_Euclid/extend_euclid.cpp",
@@ -688,7 +703,6 @@
 		"/D/Projects/CompititiveProgramming/Math/int_sqrt/int_sqrt.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/Alt.cpp",
 		"/D/Projects/CompititiveProgramming/Interactive/AA.cpp",
-		"/D/Projects/CompititiveProgramming/CodeforcesAll/AA.cpp",
 		"/D/Projects/CompititiveProgramming/Math/Seive/Seive.cpp",
 		"/D/Projects/CompititiveProgramming/DP/CoinChange/coinChaingeIII.cpp",
 		"/D/Projects/CompititiveProgramming/Game/nimGame.cpp",
@@ -780,21 +794,11 @@
 		"/D/CompititiveProgramming/DP/DiscoveringGold.cpp",
 		"/D/CompititiveProgramming/CodeforcesAll/EEE.cpp",
 		"/C/Users/kmpar/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/kmpar/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/C/Users/kmpar/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/D/CompititiveProgramming/DP/TheSpecialsMenu.cpp",
-		"/C/Users/kmpar/OneDrive/Desktop/ComingSoon.html",
-		"/D/CompititiveProgramming/PrefixSum/outputf.out",
-		"/D/CompititiveProgramming/PrefixSum/inputf.in",
-		"/D/CompititiveProgramming/PrefixSum/AA.cpp",
-		"/D/CompititiveProgramming/PrefixSum/SubarrayXOR.cpp",
-		"/D/CompititiveProgramming/PrefixSum/ChefandEasyProblem.cpp",
-		"/D/CompititiveProgramming/PrefixSum/del.cpp",
-		"/D/CompititiveProgramming/PrefixSum/ChefvsBharat.cpp"
+		"/C/Users/kmpar/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 39.3333333333
 	},
 	"find_in_files":
 	{
@@ -808,6 +812,55 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"m",
+			"arr,",
+			"v",
+			"arr,",
+			"tree,",
+			"vector<Node>& tree,",
+			"vector<int>& arr, vector<Node>& tree,",
+			"dfs",
+			"n+5",
+			"childs",
+			"pq",
+			"cout",
+			"cut",
+			"suf",
+			"div",
+			"hand",
+			"int",
+			"colored",
+			"st",
+			"tree,a,",
+			"int",
+			"1",
+			");\n",
+			"lim",
+			"max_updateSegmentTree",
+			"max_querySegmentTree",
+			"max_buildSegmentTree",
+			"updateSegmentTree",
+			"querySegmentTree",
+			"buildSegmentTree",
+			"minIndex",
+			"minValue",
+			"};\n",
+			"whatis1",
+			"]++;\n",
+			"preone",
+			"predif",
+			"temp",
+			"onto",
+			"ll",
+			"ara",
+			"int",
+			"ll",
+			";\n",
+			"int",
+			"ara",
+			"long long",
+			"double",
+			"n",
 			"1 7",
 			"1 7\n2 6",
 			";\n",
@@ -886,56 +939,7 @@
 			"k",
 			"ll",
 			"insert",
-			"set",
-			"int",
-			"(*it)",
-			"push_back",
-			"max",
-			"lazy",
-			"arr",
-			"tree",
-			"lazy",
-			"tree",
-			"int",
-			"n",
-			"r",
-			"l",
-			"cntR",
-			"cntL",
-			"ll",
-			"int",
-			"array",
-			"w[i]",
-			"int",
-			"front",
-			"v",
-			"i",
-			");\n",
-			"3",
-			"2",
-			"1",
-			"b",
-			"a",
-			"c",
-			"i",
-			"INT_MAX",
-			"suma",
-			"dif",
-			"MAXX",
-			"*it",
-			"qYogi",
-			"db",
-			"whatis",
-			"level",
-			"qYogi",
-			"int",
-			"NO",
-			"YES",
-			"wha",
-			"abs",
-			"ll",
-			"int",
-			"min"
+			"set"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -943,6 +947,41 @@
 		"regex": false,
 		"replace_history":
 		[
+			"n",
+			"",
+			"arr",
+			"",
+			"MX",
+			"st",
+			"cur",
+			"sufL",
+			"suf2",
+			"g",
+			"used",
+			"ll",
+			"paid",
+			"q",
+			"",
+			"ll",
+			"updateMaxSegTree",
+			"queryMaxSegTree",
+			"buildMaxSegTree",
+			"updateMinSegTree",
+			"queryMinSegTree",
+			"buildMinSegTree",
+			"max_buildSegmentTree",
+			"indx",
+			"value",
+			"prezero",
+			"preone",
+			"int",
+			"long long",
+			"Int22",
+			"int",
+			"Int22 ",
+			"int",
+			"long long",
+			"ll",
 			"int",
 			"vi",
 			"1ll",
@@ -1035,43 +1074,12 @@
 			"tmp",
 			"q",
 			"whatis",
-			"vis",
-			"q",
-			"ll",
-			"Tidak",
-			"Ya",
-			"max",
-			"int",
-			"ll",
-			"max",
-			"q",
-			"ll",
-			"tree[right]",
-			"tree[left]",
-			"tree[node]",
-			"second",
-			"first",
-			"pair<int,ll>",
-			"col",
-			"divs",
-			"ncr",
-			"vis[",
-			"vis[i]",
-			".second.second",
-			"emplace_back",
-			"push_back",
-			"x<m",
-			"wsum",
-			"esum",
-			"epsus",
-			"int",
-			"//what",
-			"right"
+			"vis"
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":
@@ -1086,15 +1094,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2045,
+						"buffer_size": 6647,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1873,
-								1873
+								6452,
+								6452
 							]
 						],
 						"settings":
@@ -1104,7 +1112,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 506.0,
+						"translation.y": 4032.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1112,19 +1120,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/D/Projects/CompititiveProgramming/Math/int_sqrt/int_sqrt.cpp",
+					"file": "/D/Projects/CompititiveProgramming/PriorityQueue/customPriotiryQueue.cpp",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1417,
+						"buffer_size": 2502,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								909,
-								736
+								1810,
+								1810
 							]
 						],
 						"settings":
@@ -1134,10 +1142,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 120.0,
+						"translation.y": 864.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1152,15 +1160,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10,
+						"buffer_size": 31,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								10
+								30,
+								30
 							]
 						],
 						"settings":
@@ -1186,15 +1194,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2,
+						"buffer_size": 159,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								58,
+								58
 							]
 						],
 						"settings":
@@ -1202,10 +1210,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1213,7 +1221,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1245,20 +1253,20 @@
 		"cols":
 		[
 			0.0,
-			0.726594550071,
+			0.657880955264,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.237126060997,
+			0.554263565891,
 			1.0
 		]
 	},
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 107.0
+		"height": 142.0
 	},
 	"output.find_results":
 	{
@@ -1268,7 +1276,7 @@
 	"project": "myProj.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 70.6666666667
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1327,7 +1335,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 197.0,
+	"side_bar_width": 210.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

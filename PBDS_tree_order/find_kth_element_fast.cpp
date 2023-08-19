@@ -13,7 +13,7 @@
 using namespace std;
 using ll = long long;
 constexpr ll mod = 1000000007;
-constexpr int MX = 200005;
+constexpr int MX = 1000005;
 
 void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
 ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
@@ -23,73 +23,67 @@ ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul
 ll modinverse(ll x){return modpow(x,mod-2);}
 ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 
-ll ara[MX],tree[4*MX];
-ll les[MX],great[MX];
-vector <ll>temp;
-map<ll,ll> onto;
-void update(ll node,ll l,ll r,ll pos,ll u){
+int tree[4*MX];
+void update(int node,int l,int r,int pos,int u){
+     if(pos>r || pos<l)
+        return ;
      if(l==r){
-        tree[node]=u;
+        tree[node]+=u;
         return ;
      }
-     ll mid=(l+r)/2;
+     int mid=(l+r)>>1;
      if(pos<=mid)
         update(2*node,l,mid,pos,u);
      else
         update(2*node+1,mid+1,r,pos,u);
+
      tree[node]=tree[2*node]+tree[2*node+1];
 }
-ll query(ll node,ll l,ll r,ll ql,ll qr){
-    if(ql>r || qr<l)
-        return 0;
-    if(ql<=l && qr>=r)
-        return tree[node];
-    ll mid=(l+r)/2;
-    return query(2*node,l,mid,ql,qr)+query(2*node+1,mid+1,r,ql,qr);
+int query(int node,int l,int r,int x = 0){
+    if(l==r){
+        return l;
+    }
+    int mid=(l+r)>>1;
+    if(tree[2*node]>=x)
+        return query(2*node,l,mid,x);
+    else
+        return query(2*node+1,mid+1,r,x-tree[2*node]);
 }
 
 void solve(int caseno){
-    ll i,j,k;
-    ll n,res=0;
-    cin>>n;
-    temp.clear();
-    onto.clear();
-    for(int i=0; i<n+1; i++) {
-        great[i]=0;
-        les[i]=0;
+    int n,q;
+    cin>>n>>q;
+    int x;
+    for(int i=0;i<n;i++){
+        cin>>x;
+        update(1,0,n+1,x,1);
     }
-    for(int i=0; i<4*n+1; i++) {
-        tree[i] = 0;
+    // this value will be found when there is no value.
+    update(1,0,n+1,n+1,1);
+    
+    int k;
+    for(int i=0; i<q; i++) {
+        cin>>k;
+        if(k<0){
+            k=-k;
+            int val = query(1,0,n+1,k);
+           // whatis1(val);
+            assert(val>0);
+            update(1,0,n+1,val,-1);
+        }
+        else{
+            update(1,0,n+1,k,1);
+        }
+    }       
+   
+    int val = 0;
+    val= query(1,0,n+1,1);
+    if(val==n+1)
+    {
+        cout<<0<<'\n';
+        return;
     }
-    for(i=0;i<n;i++){
-        cin>>ara[i];
-        temp.push_back(ara[i]);
-    }
-    sort(temp.begin(),temp.end());
-    for(i=0;i<n;i++)
-        onto[temp[i]]=i;
-    for(i=0;i<n;i++)
-        ara[i]=onto[ara[i]];
-    for(i=0;i<n;i++){
-        if(ara[i]==0)
-            great[i]=i;
-        else
-            great[i]=query(1,0,n,ara[i]+1,n);
-        update(1,0,n,ara[i],1);
-    }
-    for(int i=0; i<4*n+1; i++) {
-        tree[i] = 0;
-    }
-    for(i=n-1;i>=0;i--){
-        if(ara[i]==0)
-            les[i]=0;
-        else
-            les[i]=query(1,0,n,0,ara[i]-1);
-        update(1,0,n,ara[i],1);
-    }
-    for(i=0;i<n;i++)
-        res+=(les[i]);
-    cout<<res<<'\n';
+    cout<<val<<'\n';
     return;
     
 }
@@ -98,7 +92,7 @@ int main()
     ios::sync_with_stdio(0);
     cin.tie(0);
     int cases,caseno=0;
-    cin>>cases;
+    cases=1;
     while(cases--){
         solve(++caseno);
     }
