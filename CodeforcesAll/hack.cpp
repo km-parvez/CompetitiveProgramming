@@ -31,12 +31,26 @@ main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    int n=100;
-    cout<<n<<'\n';
-    for(int i=1;i<=n;i++) {
-        cout<<i<<" "<<i<<" "<<4<<endl;;
+    int n;
+    n = 2e5;
+    int q = n;
+    cout<<n<<' '<<q<<endl;
+    int ind = 7;
+    cout<<"URRRRRR";
+    while(ind<n-2){
+        if(ind%2==1){
+            cout<<"L";
+        }    
+        else cout<<"R";
+        ind++;
+    }    
+    cout<<"RR";
+    cout<<'\n';
+    int co = 1;
+    n = q;
+    while(q--){
+        cout<<"6 1 "<<6<<" "<<n<<'\n';
     }
     
-    
     return 0;
-}       
+}   

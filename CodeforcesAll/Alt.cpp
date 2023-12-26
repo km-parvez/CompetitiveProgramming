@@ -4,50 +4,73 @@
 #define whatis1(x) cout<<#x<<"="<<x<<'\n'
 #define whatis2(x,y) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<'\n'
 #define whatis3(x,y,z) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<","<<#z<<"="<<z<<'\n'
-#define whatisArray(arr,n) cout<<#arr<<", Size: "<<n<<'\n';for(int m=0;m<n;m++)  cout<<arr[m]<<" ";cout<<'\n';
+#define whatisArray(arr,n) cout<<#arr<<", Size: "<<n<<'\n';for(int m=0;m<n;m++) cout<<arr[m]<<" ";cout<<'\n';
 #define whatArray2D(arr,m,n) cout<<#arr<<", Size: "<<m<<","<<n<<'\n';for(int mm=0;mm<m;mm++){for(int nn=0;nn<n;nn++)cout<<arr[mm][nn]<<" ";cout<<'\n';} 
-#define caseprint(caseno,ans) cout<<"Case "<<caseno<<": "<<ans<<'\n'
+#define caseprint(caseno,ans) cout<<"Case "<<++caseno<<": "<<ans<<'\n'
 #define endl '\n'
 #define all(v) v.begin(),v.end()
 
 using namespace std;
 using ll = long long;
-constexpr ll mod = 1'000'000'007;
+constexpr ll mod = 1000000007;
 constexpr int MX = 200005;
 
-void solve(int caseno){
-    int n;
-    cin>>n;
-    int cnt[n+5];
-    for(int i=0;i<n;i++) {
-        int x;cin>>x;
-        cnt[x]++;
-    }
-    pair<int,int> v;
-    for(int i=1; i<=n; i++) {
-        if(cnt[i]>0){
-            v.push_back({cnt[i],i});
-        }
-    }   
-    sort(v.begin(),v.end(),greater<pair<int,int> >()); 
-    vector<int>  arr[v[0].first+4];
-    int stp = v[0].first;
-    for(int i=0; i<v.size(); i++) {
-        
-    }
+void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
+ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
+ll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }
+ll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }
+ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}
+ll modinverse(ll x){return modpow(x,mod-2);}
+ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 
-    
-    return;
-    
-}
-int main()
+#define int long long
+
+// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
+
+main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    int cases,caseno=0;
-    cin>>cases;
-    while(cases--){
-        solve(++caseno);
+    int n;
+    n=7;
+    vector<int> v(n);
+    for(int i=0;i<n;i++) {
+        v[i] = i;
     }
+
+    int dig = log2(n-1);
+    int h = (1<<dig);
+    whatis2(n-1,h);
+    set<vector<int> > st;
+    int mn = 1e7;
+    int mx = 0;
+    do{
+        vector<int> tmp;
+        
+        int co=0;
+        for(int i=0; i<n-1; i++) {
+            tmp.emplace_back(v[i]^v[i+1]);
+            if(tmp.back()<h)co++;
+        }  
+        if(co>=5){
+            whatisArray(tmp,tmp.size());
+            whatisArray(v,v.size());
+        }
+        mx = max(co,mx);
+        sort(tmp.begin(),tmp.end());    
+        mn = min(mn,tmp.back());
+        st.emplace(tmp);
+
+    }while(next_permutation(all(v)));
+    cout<<st.size()<<'\n';
+    whatis1(mn);
+    whatis1(mx);
+   /* for(auto vv:st){
+        for(int i=0; i<vv.size(); i++) {
+            cout<<vv[i]<<' ';
+        }
+        cout<<'\n';
+    }*/
+    
     return 0;
-}
+}       

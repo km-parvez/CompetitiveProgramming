@@ -13,7 +13,7 @@
 using namespace std;
 using ll = long long;
 constexpr ll mod = 1000000007;
-constexpr int MX = 200005;
+constexpr int MX = 3205;
 
 void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
 ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
@@ -23,17 +23,74 @@ ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul
 ll modinverse(ll x){return modpow(x,mod-2);}
 ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 
-int main()
+#define int long long
+
+// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
+vector<int> prm;
+void SieveOfEratosthenes(int n)
+{
+    bool prime[n + 1];
+    memset(prime, true, sizeof(prime));
+ 
+    for (int p = 2; p * p <= n; p++) {
+        if (prime[p] == true) {
+            
+            for (int i = p * p; i <= n; i += p)
+                prime[i] = false;
+        }
+    }
+    for (int p = 2; p <= n; p++)
+        if (prime[p])prm.push_back(p);
+}
+main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
+    SieveOfEratosthenes(MX);
     int n;
     cin>>n;
-    vector<int> v(n);
+    vector<int> d1(n,-1);
+    vector<int> d2(n,-1);
     for(int i=0;i<n;i++) {
-        cin>>v[i];
+        int x;cin>>x;
+        int co = 0;
+        for(int j=0; j<prm.size()&&prm[j]<=x; j++) {
+            if( x>1 && (x%prm[j])==0){
+                co++;
+                
+                if(co==1){
+                    d1[i]=prm[j];
+                }
+                x/=prm[j];
+                while(x>1&&(x%prm[j])==0){
+                    x/=prm[j];
+                }
+                break;
+            }
+
+        }
+        if( x>1){
+            co++;
+            
+            if(co==1){
+                d1[i]=x;
+            }
+            else if(co>=2){
+                d2[i]=x;
+            }
+        }
     }
-    
+    for(int i=0; i<n; i++) {
+        if(d2[i]!=-1){
+            cout<<d1[i]<<' ';
+        }
+        else cout<<-1<<' '; 
+    }
+    cout<<'\n';       
+    for(int i=0; i<n; i++) {
+        cout<<d2[i]<<' ';
+    }
+    cout<<'\n';
     
     return 0;
-}
+}       

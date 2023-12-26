@@ -14,9 +14,9 @@
 using namespace std;
 using ll = long long;
 
-#define MAX 200005
-ll tree[MAX*4],treeMin[MAX*4],lazy[MAX*4], lazyMin[MAX*4];
-ll ar[MAX];
+#define MX 200005
+ll tree[MX*4],treeMin[MX*4],lazy[MX*4], lazyMin[MX*4];
+ll arr[MX];
 /* Function to display elements of the Segment Tree and
    the Lazy tree level by level. */
 void showSegTree(ll n)
@@ -48,7 +48,7 @@ ll constSegTree(ll strt, ll end, ll idx)
   lazy[idx] = 0;
   // Saves tree[idx] = ar[strt] and then returns tree[idx]
   if(strt == end)
-    return tree[idx] = ar[strt];
+    return tree[idx] = arr[strt];
   ll mid = (strt + end) / 2;
   return tree[idx] = constSegTree(strt, mid, 2*idx+1) +
             constSegTree(mid+1, end, 2*idx+2);
@@ -153,7 +153,7 @@ void build_tree(int node, int a, int b) {
     if(a > b) return; // Out of range
     
     if(a == b) { // Leaf node
-            treeMin[node] = ar[a]; // Init value
+            treeMin[node] = arr[a]; // Init value
         return;
     }
     
@@ -242,16 +242,16 @@ int main()
         if(v[i]<0)val.emplace_back(-v[i],-i);
         else ans++;
     }
-    ar[0]=0;
+    arr[0]=0;
     for(ll i=0; i<n; i++) {
         if(i==0){
-            ar[i]= max(v[i],0LL);
+            arr[i]= max(v[i],0LL);
         }
         else{
-            ar[i]= max(ar[i-1]+v[i],ar[i-1]);
+            arr[i]= max(arr[i-1]+v[i],arr[i-1]);
         }
     }
-  //  whatisaray(ar,n);
+  //  whatisaray(arr,n);
     memset(lazy,0,sizeof(lazy));
     constSegTree(n);
     build_tree(1, 0, n-1);

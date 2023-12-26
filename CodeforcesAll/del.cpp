@@ -25,50 +25,57 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 
 #define int long long
 
-string str;
-int n;
-int dp[15][3][3];
-int func(int pos,int isSmall,int hasStarted){
-    if(pos>=n)return 1;
-    int & ref = dp[pos][isSmall][hasStarted];
-    if(ref!=-1){
-        return ref;
-    }
-    int low = 0,hi = 9;
-    if(!isSmall) hi=str[pos]-'0';
-    int val = 0;
-    for(int i=low; i<=hi; i++) {
-        int newSmall = isSmall|(i<hi);
-        int suf = 0;
-        if(i==0&&hasStarted)
-        suf =1;
-        
-        val += (func(pos+1,newSmall,hasStarted|(i!=0))+suf);
-    }
-    ref = val;
-    return ref;
-
-
-}
+// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
 
 void solve(int caseno){
-    int a,b;
-    memset(dp,-1,sizeof(dp));
-    cin>>a>>b;
-    str = to_string(b);
-    n = str.size();
-    int ans1 =func(0,0,0);
-   // whatis1(ans1);
-    int ans2 = 0;
-   // a++;
+    int n;
+    cin>>n;
+    vector<int> v(n);
+    vector<int> arr(n);
+    for(int i=0;i<n;i++) {
+        int x;
+        cin>>x;
+        arr[i]=x;
+        for(int j=0; j<32; j++) {
+            if(x<(1LL<<j)){
+                break;
+            }
+            else
+                v[i]=j;
+        }
+    }
+    vector<int> tmp = v;
+    int ans = 0;
+    int need[n+5]={0};
+    for(int i=1; i<n; i++) {
+        int co = 0;
+        if(v[i]<v[i-1]){
+            co = v[i-1]-v[i];
+            ans+=co;
+            v[i] = v[i-1];
+        }
+        if(v[i]==v[i-1]){
+            if(arr[i]<arr[i-1]){
+                int a = (log2(arr[i-1]));
+                int b = (log2(arr[i]));
+                int dif = max(0LL,a-b);
+                if((arr[i]<<dif)<arr[i-1]){
+                    v[i]++;
+                    ans++;
+                }
+            }
+            else{
+                
+            }
+            
+        }
+        
+        
+    }
+    whatisArray(v,v.size());
+    whatisArray(tmp,tmp.size());
+    cout<<ans<<'\n';
     
-    memset(dp,-1,sizeof(dp));
-    str = to_string(a);
-    n = str.size();
-    ans2 =func(0,0,0);
- //   whatis2(ans1,ans2);
-    int res = ans1-ans2;
-    cout<<res<<'\n';
     return;
     
 }
@@ -76,11 +83,10 @@ main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    cout.tie(0);
     int cases,caseno=0;
     cin>>cases;
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}
+}       

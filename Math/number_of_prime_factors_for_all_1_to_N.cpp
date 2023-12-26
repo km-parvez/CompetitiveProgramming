@@ -13,7 +13,7 @@
 using namespace std;
 using ll = long long;
 constexpr ll mod = 1000000007;
-constexpr int MX = 200005;
+constexpr int MX = 5000006;
 
 void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
 ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
@@ -25,50 +25,23 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 
 #define int long long
 
-string str;
-int n;
-int dp[15][3][3];
-int func(int pos,int isSmall,int hasStarted){
-    if(pos>=n)return 1;
-    int & ref = dp[pos][isSmall][hasStarted];
-    if(ref!=-1){
-        return ref;
+// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
+int divs[MX];
+void numsOfPrimeFactors(){
+    for(int i=2; i<MX; i++) {
+        if(divs[i]!=0)continue;
+        for(int j=i; j<MX; j+=i) {
+           if(divs[j]==0)divs[j] = i;
+        }
     }
-    int low = 0,hi = 9;
-    if(!isSmall) hi=str[pos]-'0';
-    int val = 0;
-    for(int i=low; i<=hi; i++) {
-        int newSmall = isSmall|(i<hi);
-        int suf = 0;
-        if(i==0&&hasStarted)
-        suf =1;
-        
-        val += (func(pos+1,newSmall,hasStarted|(i!=0))+suf);
+    for(int i=2; i<MX; i++) {
+        divs[i] = 1+divs[i/divs[i]];
     }
-    ref = val;
-    return ref;
-
-
 }
-
 void solve(int caseno){
     int a,b;
-    memset(dp,-1,sizeof(dp));
     cin>>a>>b;
-    str = to_string(b);
-    n = str.size();
-    int ans1 =func(0,0,0);
-   // whatis1(ans1);
-    int ans2 = 0;
-   // a++;
-    
-    memset(dp,-1,sizeof(dp));
-    str = to_string(a);
-    n = str.size();
-    ans2 =func(0,0,0);
- //   whatis2(ans1,ans2);
-    int res = ans1-ans2;
-    cout<<res<<'\n';
+    cout<<divs[a]-divs[b]<<'\n';
     return;
     
 }
@@ -76,11 +49,16 @@ main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    cout.tie(0);
     int cases,caseno=0;
+    
+    numsOfPrimeFactors();
+     for(int i=2; i<MX; i++) {
+        divs[i] += divs[i-1];
+    }
+
     cin>>cases;
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}
+}       

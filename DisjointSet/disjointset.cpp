@@ -4,12 +4,12 @@
 #define db1(x) cout<<#x<<"="<<x<<'\n'
 #define db2(x,y) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<'\n'
 #define db3(x,y,z) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<","<<#z<<"="<<z<<'\n'
-#define MAXX  1000006
+#define MX  1000006
 using namespace std;
 using ll = long long;
 
-int par[MAXX];
-int element[MAXX];
+int par[MX];
+int element[MX];
 int find(int x){
 	if(par[x]==x){
 		return x;
@@ -29,7 +29,7 @@ void makeset(int n){
 /*	for(int i=0; i<n; i++) {
 		par[element[i]]=element[i];
 	}*/
-	for(int i=1; i<=n; i++) {
+	for(int i=0; i<=n; i++) {
 		par[i]=i;
 	}
 }

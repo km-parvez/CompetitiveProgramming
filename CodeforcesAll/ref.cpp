@@ -28,49 +28,70 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
 
 void solve(int caseno){
-    int n,k,d;
-    cin>>n>>k>>d;
-    vector<int> a(n+5);
-    for(int i=1;i<=n;i++) {
-        cin>>a[i];
-    }
-    a[0]=1e9;
-    vector<int> b(n+n+5);
-    int lim = min(n+n,k);
-    for(int i=1; i<=lim; i++) {
-        cin>>b[i];
-    }
-    int x;
-    for(int i=lim+1; i<=k; i++) {
+    int n;
+    cin>>n;
+    vector<int> v(n);
+    vector<int> arr(n);
+    for(int i=0;i<n;i++) {
+        int x;
         cin>>x;
-    }
-    for(int i=lim+1; i<=n+n; i++) {
-        b[i] = b[i-k];
-    }
-    b[0]=0;
-    int ans = 0;
-    for(int t=0; t<=n+n; t++) {
-        int co =0;
-        for(int i=0; i<=b[t]; i++) {
-            a[i]++;
-        }
-        for(int i=1; i<=n; i++) {
-            if(a[i]==i){
-                co++;
+        arr[i]=x;
+        for(int j=0; j<32; j++) {
+            if(x<(1LL<<j)){
+                break;
             }
+            else
+                v[i]=j;
         }
-
-        int days = t+1;
-        if(days<=d){
-            int rem = (d-days)/2LL;
-            ans = max(ans,rem+co);
+    }
+    vector<int> tmp = v;
+    int ans = 0;
+    int need[n+5]={0};
+    for(int i=1; i<n; i++) {
+        int co = 0;
+        if(v[i]<v[i-1]){
+            co = v[i-1]-v[i];
+            ans+=co;
+            v[i] = v[i-1];
         }
-        else break;
+        if(v[i]==v[i-1]){
+            int j=63;
+            co = v[i]-tmp[i];
+            int co2 = v[i-1]-tmp[i-1];
+            for(j=63; j>=0; j--) {
+                int f = j-co;
+                int g= j-co2;
+                if(g<0)continue;
+                if( f<0 || ((1LL&(arr[i-1]>>g)) > ((1LL&(arr[i]>>f)))  )){
 
-       // whatis2(t,ans);
+                    if(f<0){
+                        for(int y=g; y>=0; y--) {
+                            if((arr[i-1]>>y)&1){
+                                v[i]++;
+                                ans++;
+                                break;
+                            }
+                        }
+                    }
+                    else {
+                        v[i]++;
+                         ans++;
+                         break;
+                    }
+                    
+                    break;
+                }
+                else if( g<0 || ((1LL&(arr[i-1]>>g)) < ((1LL&(arr[i]>>f)))  )){
+                     break;
+                }
+            }
+            
+        }
+        
         
     }
     cout<<ans<<'\n';
+    
     return;
     
 }
@@ -84,4 +105,4 @@ main()
         solve(++caseno);
     }
     return 0;
-}   
+}       
