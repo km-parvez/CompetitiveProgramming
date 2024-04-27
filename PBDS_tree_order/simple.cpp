@@ -23,41 +23,50 @@ ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul
 ll modinverse(ll x){return modpow(x,mod-2);}
 ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 
-#define int long long
+
+#include <ext/pb_ds/assoc_container.hpp> // Common file  
+#include <ext/pb_ds/tree_policy.hpp>  
+#include <functional> // for less  
+#include <iostream>  
+using namespace __gnu_pbds;  
+
+// Declaring ordered_set 
+typedef tree<int, null_type, less<int>, rb_tree_tag,  
+            tree_order_statistics_node_update>  
+    ordered_set;  
 
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
+#define int long long
 
 void solve(int caseno){
     int n;
     cin>>n;
-    string s;cin>>s;
-    n = s.size();
-    map<string,int> mp;
-    int ans =0;
-    for(int i=1; i<n-1; i++) {
-        string tmp  = s;
-        tmp[i-1]=s[i];
-        tmp[i]=s[i+1];
-        tmp[i+1] = s[i-1];
-        if(mp.find(tmp)==mp.end())ans++;
-        mp[tmp]++;
+    vector<pair<int,int> > pii(n);
+    for(int i=0;i<n;i++) {
+        int x,y;cin>>x>>y;
+        pii[i]={x,y};
     }
-
+    int ans = 0;
+    sort(pii.begin(),pii.end());   
+    ordered_set pos;
+    for(int i=0; i<n; i++) {
+        int co= pos.size()-pos.order_of_key(pii[i].second);
+        ans+=co;
+        pos.insert(pii[i].second);
+    
+    }
     cout<<ans<<'\n';
-
-
-
-
     return;
     
 }
 main()
 {
     ios::sync_with_stdio(0);
+    cin.tie(0);
     int cases,caseno=0;
     cin>>cases;
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}       
+}   

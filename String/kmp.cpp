@@ -12,8 +12,8 @@
 
 using namespace std;
 using ll = long long;
-constexpr ll mod = 1000000007;
-constexpr int MX = 200005;
+constexpr ll mod = 998244353;
+constexpr int MX = 1000006;
 
 void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
 ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
@@ -26,38 +26,77 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 #define int long long
 
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
-
-void solve(int caseno){
-    int n;
-    cin>>n;
-    string s;cin>>s;
-    n = s.size();
-    map<string,int> mp;
-    int ans =0;
-    for(int i=1; i<n-1; i++) {
-        string tmp  = s;
-        tmp[i-1]=s[i];
-        tmp[i]=s[i+1];
-        tmp[i+1] = s[i-1];
-        if(mp.find(tmp)==mp.end())ans++;
-        mp[tmp]++;
+// longest preifx that is suffix 
+int lps[MX];
+void makeLpsTable(string &ptrn){
+    lps[0] = 0;
+    int m = ptrn.size();
+    int len = 0;
+    int i=1;
+    while(i<m) {
+        if(ptrn[len]==ptrn[i]){
+            len++;
+            lps[i] = len;
+            i++;
+        }
+        else{
+            
+            if(len==0){
+                lps[i] = len;
+                i++;
+            }
+            else{
+                len = lps[len-1];
+            }
+            
+        }
     }
 
-    cout<<ans<<'\n';
+}
+int kmp(string &text, string &ptrn){
+    int indexs=0;
+    int n=text.size();
+    int m = ptrn.size();
+    makeLpsTable(ptrn);
 
-
-
-
+    int len = 0;
+    int i = 0;
+    while(i<n) {
+        if(ptrn[len]==text[i]){
+            len++;
+            i++;
+        }
+        else{
+            if(len==0){
+                i++;
+            }
+            else{
+                len = lps[len-1];
+            }
+        }
+        if(len==m){
+            indexs++;
+            len = lps[len-1];
+        }
+    }
+    return indexs;
+}
+void solve(int caseno){
+    string text,ptrn;
+    cin>>text>>ptrn;
+    int indexs = kmp(text,ptrn);
+    caseprint(caseno,indexs);
     return;
     
 }
 main()
 {
     ios::sync_with_stdio(0);
+
     int cases,caseno=0;
     cin>>cases;
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}       
+}

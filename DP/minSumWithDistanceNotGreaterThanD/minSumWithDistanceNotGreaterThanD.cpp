@@ -26,28 +26,60 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 #define int long long
 
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
+int minSumWithDistanceNotGreaterThanD( vector<int>& elements, int d) {
+    deque<int> window;
+    vector<int> dp(elements.size());
+    
+    window.push_back(0);
+    dp[0] = elements[0];
+    
+    for (int i = 1; i < elements.size(); ++i) {
+        while (!window.empty() && i - window.front() > d) {
+            window.pop_front();
+        }
+        dp[i] = elements[i] + dp[window.front()];
+        
+        while (!window.empty() && dp[i] <= dp[window.back()]) {
+            window.pop_back();
+        }
+        window.push_back(i);
+    }
+    
+    return dp.back();
+}
 
 void solve(int caseno){
-    int n;
-    cin>>n;
-    string s;cin>>s;
-    n = s.size();
-    map<string,int> mp;
-    int ans =0;
-    for(int i=1; i<n-1; i++) {
-        string tmp  = s;
-        tmp[i-1]=s[i];
-        tmp[i]=s[i+1];
-        tmp[i+1] = s[i-1];
-        if(mp.find(tmp)==mp.end())ans++;
-        mp[tmp]++;
+    int n,m,k,d;
+    cin>>n>>m>>k>>d;
+    vector<int> v[n];
+    for(int i=0;i<n;i++) {
+        for(int j=0; j<m; j++) {
+            int x;
+            cin>>x;
+            x++;
+            v[i].push_back(x);
+        }
     }
+    int cnt[n]={0};
+    for(int i=0; i<n; i++) {
+        cnt[i] = minSumWithDistanceNotGreaterThanD(v[i],d+1);
+    }
+    for(int i=1; i<n; i++) {
+        cnt[i]+=cnt[i-1];
+    }
+    int ans = 1e18;
+    for(int i=0; i<n; i++) {
+        int tmp = 0;
+        if((i+k-1LL)<n){
+            tmp = cnt[i+k-1];
+            if(i>0){
+                tmp-=cnt[i-1];
+            }
+            ans = min(ans,tmp);
+        }
 
+    }   
     cout<<ans<<'\n';
-
-
-
-
     return;
     
 }
@@ -60,4 +92,4 @@ main()
         solve(++caseno);
     }
     return 0;
-}       
+}           

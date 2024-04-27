@@ -4,28 +4,56 @@
 		"selected_items":
 		[
 			[
-				"wha",
-				"whatis2"
+				"dig",
+				"digy"
+			],
+			[
+				"set",
+				"set<${1:int},greater<${1:int}> >"
+			],
+			[
+				"fi",
+				"find(${1:10});"
 			],
 			[
 				"cout",
 				"cout<<${1:}<<'${2:\\n}';"
 			],
 			[
-				"dis",
-				"difs"
-			],
-			[
-				"sor",
-				"sort(${1:v}.begin(),${1:v}.end());"
+				"wha",
+				"whatisArray"
 			],
 			[
 				"em",
 				"emplace(${1:});"
 			],
 			[
+				"case",
+				"caseno"
+			],
+			[
+				"zz",
+				"zzcodestarter\tc++ starting with test case."
+			],
+			[
+				"tmp",
+				"tmp2"
+			],
+			[
+				"funcM",
+				"funcMAX"
+			],
+			[
+				"WHA",
+				"whatis2"
+			],
+			[
+				"pus",
+				"push_front(${1:});"
+			],
+			[
 				"pop",
-				"pop();"
+				"pop_back();"
 			],
 			[
 				"for",
@@ -36,6 +64,166 @@
 				"set<${1:int},greater<${1:int}> >"
 			],
 			[
+				"emp",
+				"emplace(${1:});"
+			],
+			[
+				"cou",
+				"cout<<${1:}<<'${2:\\n}';"
+			],
+			[
+				"so",
+				"sort(${1:v}.begin(),${1:v}.end());"
+			],
+			[
+				"N",
+				"cout<<\"NO\"<<'\\n';"
+			],
+			[
+				"sor",
+				"sort(${1:v}.begin(),${1:v}.end());"
+			],
+			[
+				"sol",
+				"solve2"
+			],
+			[
+				"v",
+				"vector<int> "
+			],
+			[
+				"what",
+				"whatisArray"
+			],
+			[
+				"pri",
+				"priority_queue<${1:int}, vector<${1:int}>, greater<${1:int}>>"
+			],
+			[
+				"u",
+				"upper_bound(${1:v}.begin(), ${1:v}.end(), ${2:x});"
+			],
+			[
+				"cl",
+				"clear();"
+			],
+			[
+				"like",
+				"likeb"
+			],
+			[
+				"empla",
+				"emplace(${1:});"
+			],
+			[
+				"query",
+				"rangeQuery"
+			],
+			[
+				"tsec",
+				"tsecondmx"
+			],
+			[
+				"tmx",
+				"tmxcnt"
+			],
+			[
+				"second",
+				"secondmx"
+			],
+			[
+				"ask",
+				"asktotest"
+			],
+			[
+				"pw",
+				"powa"
+			],
+			[
+				"pow",
+				"powb"
+			],
+			[
+				"po",
+				"pop();"
+			],
+			[
+				"pu",
+				"push_back(${1:});"
+			],
+			[
+				"begi",
+				"begin()"
+			],
+			[
+				"frequ",
+				"frequencycounter"
+			],
+			[
+				"freque",
+				"frequency"
+			],
+			[
+				"whaA",
+				"whatisArray"
+			],
+			[
+				"vec",
+				"vector<int> "
+			],
+			[
+				"IN",
+				"INT_MIN"
+			],
+			[
+				"laz",
+				"lazyMax"
+			],
+			[
+				"lazy",
+				"lazyMin"
+			],
+			[
+				"build",
+				"build_max_tree"
+			],
+			[
+				"index",
+				"indexs"
+			],
+			[
+				"whaAt",
+				"whatisArray"
+			],
+			[
+				"empl",
+				"emplace(${1:});"
+			],
+			[
+				"soe",
+				"sort(${1:v}.begin(),${1:v}.end());"
+			],
+			[
+				"fac",
+				"fact"
+			],
+			[
+				"x",
+				"upper_bound(${1:v}.begin(), ${1:v}.end(), ${2:x});"
+			],
+			[
+				"mxs",
+				"mxst"
+			],
+			[
+				"sort",
+				"sort(${1:v}.begin(),${1:v}.end());"
+			],
+			[
+				"dis",
+				"difs"
+			],
+			[
 				"pi",
 				"priority_queue<${1:int}>"
 			],
@@ -44,28 +232,12 @@
 				"vals"
 			],
 			[
-				"pu",
-				"push_back(${1:});"
-			],
-			[
 				"map",
 				"map<int,int> "
 			],
 			[
-				"laz",
-				"lazy"
-			],
-			[
 				"be",
 				"begin()"
-			],
-			[
-				"cou",
-				"cout<<${1:}<<'${2:\\n}';"
-			],
-			[
-				"tmp",
-				"tmpmx"
 			],
 			[
 				"tmpm",
@@ -76,56 +248,20 @@
 				"zzcodestarter\tc++ starting with test case."
 			],
 			[
-				"zz",
-				"zzcodestarter\tc++ starting with test case."
-			],
-			[
 				"pp",
 				"pop_back();"
-			],
-			[
-				"po",
-				"pop();"
-			],
-			[
-				"emp",
-				"empty()"
-			],
-			[
-				"case",
-				"cases"
 			],
 			[
 				"co",
 				"cout<<${1:}<<'${2:\\n}';"
 			],
 			[
-				"query",
-				"rangeQuery"
-			],
-			[
 				"update",
 				"updateElement"
 			],
 			[
-				"set",
-				"set<int> "
-			],
-			[
-				"so",
-				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
-			],
-			[
-				"sort",
-				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
-			],
-			[
 				"cuot",
 				"cout<<'\\n';"
-			],
-			[
-				"what",
-				"whatis1"
 			],
 			[
 				"push",
@@ -148,10 +284,6 @@
 				"suma"
 			],
 			[
-				"IN",
-				"INT_MAX"
-			],
-			[
 				"INT_M",
 				"INT_MAX"
 			],
@@ -162,10 +294,6 @@
 			[
 				"pr",
 				"cout.precision(8); cout<<fixed "
-			],
-			[
-				"fi",
-				"first"
 			],
 			[
 				"exp",
@@ -182,10 +310,6 @@
 			[
 				"vis",
 				"visited"
-			],
-			[
-				"ask",
-				"askForTest"
 			],
 			[
 				"wah",
@@ -216,10 +340,6 @@
 				"all9"
 			],
 			[
-				"soe",
-				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
-			],
-			[
 				"curm",
 				"curmx"
 			],
@@ -244,16 +364,8 @@
 				"score"
 			],
 			[
-				"pri",
-				"priority_queue<${1:int}>"
-			],
-			[
 				"only",
 				"onlysc"
-			],
-			[
-				"pus",
-				"push_back(${1:});"
 			],
 			[
 				"SOR",
@@ -328,24 +440,12 @@
 				"end()"
 			],
 			[
-				"pw",
-				"pwx"
-			],
-			[
 				"whA",
-				"whatisArray"
-			],
-			[
-				"whaA",
 				"whatisArray"
 			],
 			[
 				"en",
 				"end()"
-			],
-			[
-				"x",
-				"int adjX[] = {0,1,0,-1};int adjY[] = {-1,0,1,0};"
 			],
 			[
 				"p",
@@ -378,10 +478,6 @@
 			[
 				"lef",
 				"leftMaxIndex"
-			],
-			[
-				"vec",
-				"vector<int> "
 			],
 			[
 				"wha2",
@@ -418,102 +514,6 @@
 			[
 				"off",
 				"off1"
-			],
-			[
-				"g",
-				"gcd"
-			],
-			[
-				"gcd",
-				"gcdb"
-			],
-			[
-				"sq",
-				"sqr"
-			],
-			[
-				"pir",
-				"priority_queue<${1:int}, vector<${1:int}>, greater<${1:int}>>"
-			],
-			[
-				"vc",
-				"vector<int> "
-			],
-			[
-				"verc",
-				"vector<int> "
-			],
-			[
-				"empla",
-				"emplace_back(${1:});"
-			],
-			[
-				"treeM",
-				"treeMax"
-			],
-			[
-				"treeMax",
-				"treeMaxInd"
-			],
-			[
-				"treeMa",
-				"treeMaxInd"
-			],
-			[
-				"cmn",
-				"cmn1"
-			],
-			[
-				"ve",
-				"vector<int> "
-			],
-			[
-				"vector",
-				"vector<int> "
-			],
-			[
-				"casen",
-				"caseno"
-			],
-			[
-				"hel",
-				"help2"
-			],
-			[
-				"he",
-				"help"
-			],
-			[
-				"give",
-				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
-			],
-			[
-				"mp",
-				"map<int,int> "
-			],
-			[
-				"N",
-				"cout<<\"NO\"<<'\\n';"
-			],
-			[
-				"ci",
-				"cin>>"
-			],
-			[
-				"nw",
-				"nw2"
-			],
-			[
-				"M",
-				"INT_MIN"
-			],
-			[
-				"type",
-				"type1"
-			],
-			[
-				"fal",
-				"flag"
 			]
 		]
 	},
@@ -523,16 +523,8 @@
 			"file": "AA.cpp",
 			"settings":
 			{
-				"buffer_size": 2428,
+				"buffer_size": 3363,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/CompititiveProgramming/Math/Seive/Seive.cpp",
-			"settings":
-			{
-				"buffer_size": 2188,
 				"line_ending": "Windows"
 			}
 		},
@@ -540,7 +532,7 @@
 			"file": "inputf.in",
 			"settings":
 			{
-				"buffer_size": 92,
+				"buffer_size": 24,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -549,7 +541,7 @@
 			"file": "outputf.out",
 			"settings":
 			{
-				"buffer_size": 10,
+				"buffer_size": 8,
 				"line_ending": "Windows"
 			}
 		}
@@ -664,32 +656,51 @@
 	"expanded_folders":
 	[
 		"/D/Projects/CompititiveProgramming",
-		"/D/Projects/CompititiveProgramming/BFS_DFS",
-		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation",
-		"/D/Projects/CompititiveProgramming/BinerySearch",
+		"/D/Projects/CompititiveProgramming/CodeforcesAll",
 		"/D/Projects/CompititiveProgramming/Game",
 		"/D/Projects/CompititiveProgramming/Interactive",
 		"/D/Projects/CompititiveProgramming/Math",
 		"/D/Projects/CompititiveProgramming/Math/Combinatorics",
+		"/D/Projects/CompititiveProgramming/Math/Combinatorics/LightOJ",
+		"/D/Projects/CompititiveProgramming/Math/int_sqrt",
+		"/D/Projects/CompititiveProgramming/Math/InverseMod",
 		"/D/Projects/CompititiveProgramming/Math/Seive",
+		"/D/Projects/CompititiveProgramming/PBDS_tree_order",
 		"/D/Projects/CompititiveProgramming/PriorityQueue",
 		"/D/Projects/CompititiveProgramming/SegmentTree",
-		"/D/Projects/CompititiveProgramming/String"
+		"/D/Projects/CompititiveProgramming/String",
+		"/D/Projects/CompititiveProgramming/UnorderMap_Hash_Map"
 	],
 	"file_history":
 	[
+		"/D/Projects/CompititiveProgramming/CodeforcesAll/Alt.cpp",
+		"/D/Projects/CompititiveProgramming/String/Hashing/Hashing.cpp",
+		"/D/Projects/CompititiveProgramming/BigSum/BigSum.cpp",
+		"/D/Projects/CompititiveProgramming/DP/minSumWithDistanceNotGreaterThanD/minSumWithDistanceNotGreaterThanD.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/__mageFun_Max_n_Second_Max_with_count_in_range.cpp",
+		"/D/Projects/CompititiveProgramming/Interactive/AA.cpp",
+		"/D/Projects/CompititiveProgramming/DP/DigitDp/HowManyZeroes.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/lazy_min_max_perfect.cpp",
+		"/D/Projects/CompititiveProgramming/String/kmp.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_Max.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/__margeFunctionSegmentTree.cpp",
+		"/D/Projects/CompititiveProgramming/String/inputf.in",
+		"/D/Projects/CompititiveProgramming/String/outputf.out",
+		"/C/Users/user/Downloads/htdcedu_res.sql",
+		"/D/Projects/CompititiveProgramming/DP/CoinChange/coinChaingeIII.cpp",
+		"/D/Projects/CompititiveProgramming/PBDS_tree_order/simple.cpp",
+		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/inlineDFSfunction.cpp",
+		"/D/Projects/CompititiveProgramming/Math/InverseMod/NcRmod.cpp",
+		"/D/Projects/CompititiveProgramming/PBDS_tree_order/countSmallerBiggerLeft.cpp",
+		"/C/Users/user/OneDrive/Desktop/delete.html",
 		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_both.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/RangeSumQueryUpdate.cpp",
 		"/D/Projects/CompititiveProgramming/Game/nimGame.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/hack.cpp",
-		"/D/Projects/CompititiveProgramming/String/outputf.out",
 		"/D/Projects/CompititiveProgramming/String/rabin_karp.cpp",
-		"/D/Projects/CompititiveProgramming/String/inputf.in",
 		"/D/Projects/CompititiveProgramming/DP/DigitDp/digitdp.cpp",
 		"/D/Projects/CompititiveProgramming/phameenAssignGroup10.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/other.cpp",
-		"/D/Projects/CompititiveProgramming/Interactive/AA.cpp",
-		"/D/Projects/CompititiveProgramming/CodeforcesAll/Alt.cpp",
 		"/D/Projects/CompititiveProgramming/DisjointSet/disjointset.cpp",
 		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/dfs_graph.cpp",
 		"/D/Projects/CompititiveProgramming/BinerySearch/note.txt",
@@ -699,9 +710,6 @@
 		"/D/Projects/CompititiveProgramming/Math/number_of_prime_factors_for_all_1_to_N.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/ex.cpp",
 		"/D/Projects/CompititiveProgramming/Interactive/AA_with_local_test.cpp",
-		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/inlineDFSfunction.cpp",
-		"/D/Projects/CompititiveProgramming/SegmentTree/__margeFunctionSegmentTree.cpp",
-		"/D/Projects/CompititiveProgramming/DP/CoinChange/coinChaingeIII.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/AA.cpp",
 		"/C/Users/user/AppData/Roaming/Sublime Text 3/Installed Packages/Package Control.sublime-package",
 		"/C/Users/user/OneDrive/Desktop/sublimeSettings/Preferences.sublime-settings",
@@ -709,9 +717,7 @@
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/outputf.out",
 		"/D/Projects/CompititiveProgramming/PBDS_tree_order/find_kth_element_fast.cpp",
 		"/D/Projects/CompititiveProgramming/PBDS_tree_order/almostsimiler_but_fast.cpp",
-		"/D/Projects/CompititiveProgramming/PBDS_tree_order/countSmallerBiggerLeft.cpp",
 		"/D/Projects/CompititiveProgramming/BIT/bit.cpp",
-		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_Max.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/nodeUpdateSegmentTree.cpp",
 		"/C/Users/user/Downloads/env (1)",
 		"/D/Projects/CompititiveProgramming/LCA/LCA_SPOJ.cpp",
@@ -733,7 +739,6 @@
 		"/D/Projects/CompititiveProgramming/Math/PascalTriangle/Race.cpp",
 		"/D/Projects/CompititiveProgramming/Math/int_sqrt/int_sqrt.cpp",
 		"/D/Projects/CompititiveProgramming/Math/Seive/Seive.cpp",
-		"/D/Projects/CompititiveProgramming/Math/InverseMod/NcRmod.cpp",
 		"/D/Projects/CompititiveProgramming/PBDS_tree_order/pbds_less_greater_code.cpp",
 		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/BFS_grid.cpp",
 		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/dfs_grid.cpp",
@@ -795,21 +800,11 @@
 		"/D/CompititiveProgramming/Contractive/AA.cpp",
 		"/D/CompititiveProgramming/BFS_DFS/LightOj/bladeandSword2BFS.cpp",
 		"/D/CompititiveProgramming/SegmentTree/lightOj/outputf.out",
-		"/D/CompititiveProgramming/SegmentTree/lightOj/inputf.in",
-		"/D/CompititiveProgramming/SegmentTree/lightOj/FastQueries.cpp",
-		"/D/CompititiveProgramming/BFS_DFS/LightOj/beehivesDFS.cpp",
-		"/D/CompititiveProgramming/DP/outputf.out",
-		"/D/CompititiveProgramming/DP/inputf.in",
-		"/D/CompititiveProgramming/DP/AA.cpp",
-		"/D/CompititiveProgramming/DP/GoodorBad.cpp",
-		"/D/CompititiveProgramming/CodeforcesAll/AA.exe",
-		"/D/CompititiveProgramming/DP/MatricsChainMultiplication/outputf.out",
-		"/D/CompititiveProgramming/DP/MatricsChainMultiplication/inputf.in",
-		"/D/CompititiveProgramming/DP/MatricsChainMultiplication/Mixtures.cpp"
+		"/D/CompititiveProgramming/SegmentTree/lightOj/inputf.in"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 39.3333333333
 	},
 	"find_in_files":
 	{
@@ -823,6 +818,48 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"mx",
+			"return",
+			"emplace",
+			"int",
+			"suf2",
+			"pre2",
+			";\n",
+			"b",
+			"a",
+			"node",
+			"make_pair",
+			"first",
+			"second",
+			"pair<int, int>",
+			"nw[i]",
+			"maximumOccurrence",
+			"bsize",
+			"anslen",
+			"score",
+			"query_max_tree",
+			"MIN",
+			"Max",
+			"max",
+			"build_tree",
+			"constSegTree",
+			"ptr",
+			"prtn",
+			"str",
+			"caseno",
+			"mp",
+			"ALGORITHM",
+			"create view",
+			"view",
+			"access",
+			"zz",
+			"salary",
+			"c",
+			"X",
+			"need",
+			"arr",
+			"what",
+			"ok",
 			");\n",
 			"INT_MAX",
 			"ar",
@@ -908,49 +945,7 @@
 			"div",
 			"hand",
 			"int",
-			"colored",
-			"st",
-			"tree,a,",
-			"int",
-			"1",
-			");\n",
-			"lim",
-			"max_updateSegmentTree",
-			"max_querySegmentTree",
-			"max_buildSegmentTree",
-			"updateSegmentTree",
-			"querySegmentTree",
-			"buildSegmentTree",
-			"minIndex",
-			"minValue",
-			"};\n",
-			"whatis1",
-			"]++;\n",
-			"preone",
-			"predif",
-			"temp",
-			"onto",
-			"ll",
-			"ara",
-			"int",
-			"ll",
-			";\n",
-			"int",
-			"ara",
-			"long long",
-			"double",
-			"n",
-			"1 7",
-			"1 7\n2 6",
-			";\n",
-			"ll",
-			"v[i]",
-			"1",
-			"int",
-			"push_back",
-			"v[i]",
-			"s",
-			"data"
+			"colored"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -958,6 +953,29 @@
 		"regex": false,
 		"replace_history":
 		[
+			"mn",
+			"insert",
+			"double",
+			"suf",
+			"pre",
+			"right",
+			"left",
+			"node",
+			"mx",
+			"mxcnt",
+			"node",
+			"tp",
+			"MAX",
+			"Min",
+			"min",
+			"ptrn",
+			"z",
+			"x",
+			"w",
+			"need",
+			"x",
+			"v",
+			"//what",
 			"arr",
 			"MX",
 			"arr",
@@ -1062,35 +1080,12 @@
 			"ll",
 			"treeMaxInd",
 			"lazyMax",
-			"query_max_tree",
-			"update_max_tree",
-			"treeMax",
-			"build_max_tree",
-			"lcm_n",
-			"dp",
-			"insert",
-			"double",
-			"zeros",
-			"",
-			"true",
-			"is[flag]",
-			"visited[flag]",
-			"first",
-			"second",
-			"putki",
-			"v[i+1].first",
-			"v[i].first",
-			"v[i+1].first",
-			"v[i].first",
-			"int",
-			"ll",
-			"int",
-			"push_back"
+			"query_max_tree"
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":
@@ -1105,15 +1100,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2428,
+						"buffer_size": 3363,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1812,
-								1812
+								1672,
+								1672
 							]
 						],
 						"settings":
@@ -1123,40 +1118,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 643.333333333,
+						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Projects/CompititiveProgramming/Math/Seive/Seive.cpp",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2105,
-								2076
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1242.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1166,20 +1131,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "inputf.in",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 92,
+						"buffer_size": 24,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								92,
-								92
+								0,
+								24
 							]
 						],
 						"settings":
@@ -1187,7 +1152,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1200,20 +1165,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "outputf.out",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10,
+						"buffer_size": 8,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2,
+								2
 							]
 						],
 						"settings":
@@ -1232,7 +1197,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -1264,20 +1229,20 @@
 		"cols":
 		[
 			0.0,
-			0.638519924099,
+			0.614688668484,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.414564819864,
+			0.5,
 			1.0
 		]
 	},
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 93.0
+		"height": 108.0
 	},
 	"output.find_results":
 	{
@@ -1287,7 +1252,7 @@
 	"project": "myProj.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 70.6666666667
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1346,7 +1311,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 226.0,
+	"side_bar_width": 213.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

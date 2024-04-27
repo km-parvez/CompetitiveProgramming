@@ -28,60 +28,52 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
 
 void solve(int caseno){
-    int n,k,d;
-    cin>>n>>k>>d;
-    vector<int> a(n+5);
-    for(int i=1;i<=n;i++) {
-        cin>>a[i];
-    }
-    a[0]=1e9;
-    vector<int> b(n+n+5);
-    int lim = min(n+n,k);
-    for(int i=1; i<=lim; i++) {
-        cin>>b[i];
-    }
-    int x;
-    for(int i=lim+1; i<=k; i++) {
-        cin>>x;
-    }
-    for(int i=lim+1; i<=n+n; i++) {
-        b[i] = b[i-k];
-    }
-    b[0]=0;
-    int ans = 0;
-    for(int t=0; t<=n+n; t++) {
-        int co =0;
-        for(int i=0; i<=b[t]; i++) {
-            a[i]++;
+    int n,k;
+    cin>>n>>k;
+    multiset<int,greater<int> >st;
+    int ln = log2(k)+1;
+    int sum = 0;
+    for(int i=0; i<ln; i++) {
+        int tmp = (1LL<<i);
+        if((sum+tmp)<k){
+            st.emplace(tmp);
+            sum+=tmp;
         }
-        for(int i=1; i<=n; i++) {
-            if(a[i]==i){
-                co++;
-            }
+        else{
+          //  if((k-1LL-sum)>0)
+            st.emplace(k-1LL-sum);
+            break;
         }
-
-        int days = t+1;
-        if(days<=d){
-            int rem = (d-days)/2LL;
-            ans = max(ans,rem+co);
-        }
-        else break;
-
-       // whatis2(t,ans);
         
     }
-    cout<<ans<<'\n';
+  
+    st.emplace(k+1);
+    sum+=(k+1);
+
+    st.emplace(sum+1);
+    sum = sum+1+k;
+    while(sum<=n){
+        st.emplace(sum);
+        sum+=sum;
+    }
+    jump:
+    assert(st.size()<=25);
+    st.erase(0);
+    cout<<st.size()<<'\n';
+    for(auto c:st){
+        cout<<c<<' ';   
+    }
+    cout<<'\n';
     return;
     
 }
 main()
 {
     ios::sync_with_stdio(0);
-    cin.tie(0);
     int cases,caseno=0;
     cin>>cases;
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}   
+}       

@@ -13,7 +13,7 @@
 using namespace std;
 using ll = long long;
 constexpr ll mod = 1000000007;
-constexpr int MX = 200005;
+constexpr int MX = 1000006;
 
 void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
 ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
@@ -26,26 +26,44 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 #define int long long
 
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
-
+int pwr[MX];
+int base = 31;
+int val(char ch){
+    int v = ch - 'a' + 1;
+    return v;
+}
 void solve(int caseno){
     int n;
-    cin>>n;
     string s;cin>>s;
-    n = s.size();
-    map<string,int> mp;
-    int ans =0;
-    for(int i=1; i<n-1; i++) {
-        string tmp  = s;
-        tmp[i-1]=s[i];
-        tmp[i]=s[i+1];
-        tmp[i+1] = s[i-1];
-        if(mp.find(tmp)==mp.end())ans++;
-        mp[tmp]++;
+    n=s.size();
+    int h1 = 0;
+    int h2 = 0;
+    for(int i=0; i<n; i++) {
+        h1 = modadd(modmul(h1,base),val(s[i]));
+        h2 = modadd(h2,modmul(val(s[i]),pwr[i]));
     }
-
-    cout<<ans<<'\n';
-
-
+    if(h1==h2){
+        caseprint(caseno,n);
+        return;
+    }
+    int s1 = 0,s2=0;
+    for(int i=0; i<n; i++) {
+        s2 = modadd(modmul(s2,base),val(s[i]));
+        s1 = modadd(s1,modmul(val(s[i]),pwr[i]));
+     //   whatis2(s1,s2);
+        int tmp1 = h1;
+        int tmp2 = h2;
+        tmp1 = modmul(tmp1,pwr[i+1]);
+        tmp1 = modadd(tmp1,s1);
+        int ts2 = s2;
+        ts2 = modmul(ts2,pwr[n]);
+        tmp2 = modadd(tmp2,ts2);
+      //  whatis2(tmp1,tmp2);
+        if(tmp2==tmp1){
+            caseprint(caseno,n+i+1);
+            return;
+        }
+    }
 
 
     return;
@@ -56,8 +74,12 @@ main()
     ios::sync_with_stdio(0);
     int cases,caseno=0;
     cin>>cases;
+    pwr[0]=1;
+    for(int i=1; i<MX; i++) {
+        pwr[i] = modmul(pwr[i-1],base);
+    }
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}       
+}   
