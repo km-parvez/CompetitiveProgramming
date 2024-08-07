@@ -28,6 +28,7 @@ void solve(int caseno){
     while( low <= hi){
         int mid = (hi+low)/2;
         bool res = false;
+        
         int brr[n+5][m+5];
         memset(brr,0,sizeof(brr));  
         for(int i=0; i<n; i++) {

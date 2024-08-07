@@ -11,8 +11,10 @@
 #define all(v) v.begin(),v.end()
 using namespace std;
 using ll = long long;
+
 constexpr ll mod = 1'000'000'007;
 constexpr int MX = 200005;
+
 unsigned long long fac[MX];
 
 unsigned long long power(unsigned long long x,int y, int p)

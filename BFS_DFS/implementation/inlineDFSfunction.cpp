@@ -13,6 +13,7 @@
 
 using namespace std;
 using ll = long long;
+#define int long long
 
 void solve(int caseno){
     int n;
@@ -52,7 +53,7 @@ void solve(int caseno){
     return;
     
 }
-int main()
+main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
