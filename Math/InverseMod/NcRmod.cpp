@@ -9,91 +9,91 @@
 #define caseprint(caseno,ans) cout<<"Case "<<caseno<<": "<<ans<<'\n'
 #define endl '\n'
 #define all(v) v.begin(),v.end()
+
 using namespace std;
 using ll = long long;
+constexpr ll mod = 1000000007;
+constexpr int MX = 2000006;
 
-constexpr ll mod = 1'000'000'007;
-constexpr int MX = 200005;
+void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
+ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
+ll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }
+ll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }
+ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}
+ll modinverse(ll x){return modpow(x,mod-2);}
+ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 
-unsigned long long fac[MX];
+#define int long long
 
-unsigned long long power(unsigned long long x,int y, int p)
-{
-    unsigned long long res = 1;
-    x = x % p;
-    while (y > 0)
-    {
-        if (y & 1)
-            res = (res * x) % p;
-        y = y >> 1;
-        x = (x * x) % p;
+// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
+ll fact[MX];
+ll modInv[MX];
+bool initFact = false;
+
+void factInit(){
+    initFact = true;
+
+    fact[0] = 1;
+    for (ll i = 1; i <MX; i++){
+        fact[i] = (fact[i - 1] * i) % mod;
     }
-    return res;
-}
-unsigned long long modInverse(unsigned long long n, int p)
-{
-    return power(n, p - 2, p);
+    modInv[MX - 1] = modinverse(fact[MX-1]);
+    for (int i = MX - 2; i >= 0; i--){
+        modInv[i] = modInv[i + 1] * (i + 1) % mod;
+    }
 }
 
-unsigned long long nCrModPFermat(unsigned long long n,
-                                 int r, int p)
+ll nCr(ll n,ll r)
 {
+    if(!initFact){
+        factInit();
+    }
     if (n < r)
         return 0;
     if (r == 0)
         return 1;
-    return (fac[n] * modInverse(fac[r], p) % p
-            * modInverse(fac[n - r], p) % p)
-           % p;
+    return ((fact[n] * modInv[r])%mod * modInv[n-r])% mod;
 }
 void solve(int caseno){
-    int n;
-    cin>>n;
-    vector<int> v(n);
-    int mx = 0;
-    for(int i=0;i<n;i++) {
-        cin>>v[i];
-        mx=max(mx,v[i]);
-    }
-    int sml=0;
-    int cnt=0;
-    for(int i=0; i<n; i++) {
-        if(mx-1>v[i]){
-            sml++;
-        }
-        if(mx==v[i])cnt++;
-    }
-
-    ll ans = fac[n];
-    if(cnt>1){
-        cout<<ans<<'\n';return;
-    }
-    n--;
-    ll sub =0;
-    for(int i=0; i<=sml; i++) {
-        ll tmp = nCrModPFermat(sml,sml-i,mod);
-        sub = (sub+(fac[i]*fac[n-i])%mod *tmp )%mod;
-        
-
-    }
-    ans -=sub;
-    ans+=mod;
-    cout<<(ans)%mod<<'\n';
+    int z,o;
+    cin>>z>>o;
+    int n = z+o;
+    int pp = 0,nn = 0;
+    int easy = n/2;
+    nn = (easy+1)/2;
+    pp = easy/2;
     
+    int ans = 0;
+    int mn = min(pp,nn);
+    for(int i=0; i<=mn; i++) {
+        int got = i+i;
+        int rem = o-got;
+        if(rem<0)break;
+       // whatis2(easy,rem);
+        if(rem>easy)continue;
+      
+
+        int tmppp = nCr(pp,i);
+        int tmpnn = nCr(nn,i);
+        int tmprem = nCr(easy,rem);
+     //   whatis3(tmppp,tmpnn,tmprem);
+        int tmp = modmul(tmppp,modmul(tmpnn,tmprem));
+        ans = modadd(ans,tmp);
+
+    }
+    cout<<ans<<'\n';
+
     return;
     
 }
-int main()
+main()
 {
     ios::sync_with_stdio(0);
-    fac[0] = 1;
-    for (ll i = 1; i <MX; i++)
-        fac[i] = (fac[i - 1] * i) % mod;
-
+    cin.tie(0);
     int cases,caseno=0;
     cin>>cases;
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}
+}           
