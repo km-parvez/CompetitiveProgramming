@@ -119,6 +119,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "AA.cpp",
+			"settings":
+			{
+				"buffer_size": 3324,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inputf.in",
+			"settings":
+			{
+				"buffer_size": 94,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "outputf.out",
+			"settings":
+			{
+				"buffer_size": 35,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -186,6 +212,11 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/phonefinity/My Codes/CompetitiveProgramming",
+		"/Users/phonefinity/My Codes/CompetitiveProgramming/CodeforcesAll"
+	],
 	"file_history":
 	[
 		"/Users/phonefinity/My Codes/CompetitiveProgramming/CodeforcesAll/AA",
@@ -238,8 +269,107 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "AA.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1548,
+								1548
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 165.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "inputf.in",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 94,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "outputf.out",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -259,17 +389,31 @@
 				0,
 				0,
 				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
 				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.690928643725,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -287,7 +431,7 @@
 		"height": 102.0
 	},
 	"pinned_build_system": "Packages/User/CP.sublime-build",
-	"project": "AA.sublime-project",
+	"project": "macProject.sublime-project",
 	"replace":
 	{
 		"height": 48.0
@@ -323,12 +467,33 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 292.0,
+	"side_bar_width": 205.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
