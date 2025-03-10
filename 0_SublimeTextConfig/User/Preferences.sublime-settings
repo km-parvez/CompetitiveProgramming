@@ -1,0 +1,11 @@
+{
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"index_files": true,
+	"memory_limit": 2048,
+	"remember_full_screen": true,
+	"tab_completion": false
+}

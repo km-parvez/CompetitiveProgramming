@@ -1,0 +1,4 @@
+[
+	{ "keys": ["ctrl+shift+r"], "command": "reindent"},
+	{ "keys": ["f10"], "command": "cancel_build" }
+]
