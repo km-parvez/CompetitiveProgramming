@@ -12,22 +12,19 @@ using namespace std;
 #define endl '\n'
 #define all(v) v.begin(),v.end()
 
-
+constexpr int MX = 500005;
 using ll = long long;
 constexpr ll mod = 1000000007;
-constexpr int MX = 500005;
-
 void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
 ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
 ll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }
 ll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }
 ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}
 ll modinverse(ll x){return modpow(x,mod-2);}
-ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
-
+ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}      
 #define int long long
 
-// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
+// Think about binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
 
 void solve(int caseno){
     int n;
@@ -36,6 +33,8 @@ void solve(int caseno){
     for(int i=0;i<n;i++) {
         cin>>v[i];
     }
+    debug(v);
+    whatisArray(v,v.size());
     
     return;
     
@@ -50,4 +49,4 @@ main()
         solve(++caseno);
     }
     return 0;
-}           
+}   
