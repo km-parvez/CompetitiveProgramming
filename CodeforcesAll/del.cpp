@@ -26,67 +26,43 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 #define int long long
 
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
-
+void tobin(int n){
+    vector<int> ans;
+    while(n>0){
+        ans.push_back(n%2);
+        n/=2;
+    }
+    reverse(all(ans));
+    for(int i=0; i<ans.size(); i++) {
+        cout<<ans[i];
+    }
+    cout<<'\n';
+}
 void solve(int caseno){
-    int n;
-    cin>>n;
-    vector<int> v(n);
-    vector<int> arr(n);
-    for(int i=0;i<n;i++) {
-        int x;
-        cin>>x;
-        arr[i]=x;
-        for(int j=0; j<32; j++) {
-            if(x<(1LL<<j)){
-                break;
-            }
-            else
-                v[i]=j;
-        }
-    }
-    vector<int> tmp = v;
+    int x,m;
+    cin>>x>>m;
     int ans = 0;
-    int need[n+5]={0};
-    for(int i=1; i<n; i++) {
-        int co = 0;
-        if(v[i]<v[i-1]){
-            co = v[i-1]-v[i];
-            ans+=co;
-            v[i] = v[i-1];
+    int lim = m ;
+   
+    for(int i=1; i<=lim; i++) {
+        int xr = (x^i);
+
+        if((xr%x)==0 ||(xr%i)==0 ){
+            whatis3(xr,x,i);
+            ans++;
         }
-        if(v[i]==v[i-1]){
-            if(arr[i]<arr[i-1]){
-                int a = (log2(arr[i-1]));
-                int b = (log2(arr[i]));
-                int dif = max(0LL,a-b);
-                if((arr[i]<<dif)<arr[i-1]){
-                    v[i]++;
-                    ans++;
-                }
-            }
-            else{
-                
-            }
-            
-        }
-        
-        
     }
-    whatisArray(v,v.size());
-    whatisArray(tmp,tmp.size());
     cout<<ans<<'\n';
-    
     return;
     
 }
 main()
 {
     ios::sync_with_stdio(0);
-    cin.tie(0);
     int cases,caseno=0;
     cin>>cases;
     while(cases--){
         solve(++caseno);
     }
     return 0;
-}       
+}   

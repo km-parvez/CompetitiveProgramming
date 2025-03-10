@@ -4,56 +4,228 @@
 		"selected_items":
 		[
 			[
-				"go",
-				"go1"
-			],
-			[
-				"em",
-				"emplace(${1:});"
-			],
-			[
-				"emp",
-				"empty()"
-			],
-			[
-				"puh",
-				"push_back(${1:});"
-			],
-			[
-				"zz",
-				"zzcodestarter\tc++ starting with test case."
-			],
-			[
 				"wha",
-				"whatis1"
-			],
-			[
-				"sor",
-				"sort(${1:v}.begin(),${1:v}.end());"
-			],
-			[
-				"so",
-				"sort(${1:v}.begin(),${1:v}.end());"
-			],
-			[
-				"case",
-				"cases"
-			],
-			[
-				"tmp",
-				"tmp2"
-			],
-			[
-				"soe",
-				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
+				"whatisArray"
 			],
 			[
 				"cout",
 				"cout<<${1:}<<'${2:\\n}';"
 			],
 			[
+				"lvl",
+				"lvlvec"
+			],
+			[
+				"em",
+				"empty()"
+			],
+			[
+				"fal",
+				"flag"
+			],
+			[
+				"sol",
+				"solve2"
+			],
+			[
+				"case",
+				"caseno"
+			],
+			[
+				"sor",
+				"sort(${1:v}.begin(),${1:v}.end());"
+			],
+			[
+				"zz",
+				"zzcodestarter\tc++ starting with test case."
+			],
+			[
+				"st",
+				"set<${1:int},greater<${1:int}> >"
+			],
+			[
+				"se",
+				"set<int> "
+			],
+			[
+				"po",
+				"pop();"
+			],
+			[
+				"tmp",
+				"tmp2"
+			],
+			[
+				"cou",
+				"cout<<${1:}<<'${2:\\n}';"
+			],
+			[
 				"for",
 				"for(int ${1:i}=${2:0}; ${1:i}<${3:n}; ${1:i}${4:++}) {$5}"
+			],
+			[
+				"pre",
+				"cout.precision(8); cout<<fixed "
+			],
+			[
+				"co",
+				"cout<<'\\n';"
+			],
+			[
+				"z",
+				"zzcodestarter\tc++ starting without test case."
+			],
+			[
+				"modo",
+				"modpow"
+			],
+			[
+				"pir",
+				"priority_queue<${1:int}>"
+			],
+			[
+				"set",
+				"set<int> "
+			],
+			[
+				"fi",
+				"find(${1:10});"
+			],
+			[
+				"way",
+				"waysH"
+			],
+			[
+				"wa",
+				"waysH"
+			],
+			[
+				"joi",
+				"join2"
+			],
+			[
+				"makes",
+				"makeset2"
+			],
+			[
+				"update",
+				"updateElement"
+			],
+			[
+				"vc",
+				"vector<int> "
+			],
+			[
+				"take",
+				"taken"
+			],
+			[
+				"emp",
+				"emplace_back(${1:});"
+			],
+			[
+				"sort",
+				"sort(${1:v}.begin(),${1:v}.end());"
+			],
+			[
+				"limm",
+				"limmn"
+			],
+			[
+				"sum",
+				"sumMx"
+			],
+			[
+				"soer",
+				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
+			],
+			[
+				"has",
+				"hasB"
+			],
+			[
+				"wh",
+				"while"
+			],
+			[
+				"con",
+				"cout<<'\\n';"
+			],
+			[
+				"shou",
+				"should"
+			],
+			[
+				"empla",
+				"emplace(${1:});"
+			],
+			[
+				"soe",
+				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
+			],
+			[
+				"WHA",
+				"whatis1"
+			],
+			[
+				"pop",
+				"pop_back();"
+			],
+			[
+				"cotu",
+				"cout<<'\\n';"
+			],
+			[
+				"vis",
+				"visa"
+			],
+			[
+				"e",
+				"end()"
+			],
+			[
+				"pu",
+				"push_back(${1:});"
+			],
+			[
+				"r",
+				"rbegin()"
+			],
+			[
+				"pri",
+				"priority_queue<${1:int}>"
+			],
+			[
+				"base",
+				"base_hash"
+			],
+			[
+				"IN",
+				"INT_MAX"
+			],
+			[
+				"nw",
+				"nwpos"
+			],
+			[
+				"com",
+				"comb"
+			],
+			[
+				"en",
+				"end()"
+			],
+			[
+				"go",
+				"go1"
+			],
+			[
+				"puh",
+				"push_back(${1:});"
+			],
+			[
+				"so",
+				"sort(${1:v}.begin(),${1:v}.end());"
 			],
 			[
 				"vecto",
@@ -76,10 +248,6 @@
 				"scoren"
 			],
 			[
-				"cou",
-				"cout<<'\\n';"
-			],
-			[
 				"whi",
 				"while"
 			],
@@ -92,18 +260,6 @@
 				"whatis1"
 			],
 			[
-				"se",
-				"set<int> "
-			],
-			[
-				"pop",
-				"pop();"
-			],
-			[
-				"shou",
-				"shouldpp"
-			],
-			[
 				"shoul",
 				"shouldpp"
 			],
@@ -112,40 +268,12 @@
 				"cout<<\"YES\"<<'\\n';"
 			],
 			[
-				"po",
-				"pop_back();"
-			],
-			[
 				"ask",
 				"askToTest"
 			],
 			[
-				"pu",
-				"push_back(${1:});"
-			],
-			[
 				"p",
 				"pop();"
-			],
-			[
-				"set",
-				"set<int> "
-			],
-			[
-				"wh",
-				"while"
-			],
-			[
-				"sort",
-				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
-			],
-			[
-				"pri",
-				"priority_queue<${1:int}>"
-			],
-			[
-				"lvl",
-				"lvlv"
 			],
 			[
 				"whaA",
@@ -172,20 +300,12 @@
 				"push_back(${1:});"
 			],
 			[
-				"has",
-				"hasht2"
-			],
-			[
 				"hash",
 				"hash2"
 			],
 			[
 				"hp",
 				"hp2"
-			],
-			[
-				"fi",
-				"first"
 			],
 			[
 				"waht",
@@ -200,16 +320,8 @@
 				"funcMAX"
 			],
 			[
-				"WHA",
-				"whatis2"
-			],
-			[
 				"N",
 				"cout<<\"NO\"<<'\\n';"
-			],
-			[
-				"sol",
-				"solve2"
 			],
 			[
 				"v",
@@ -226,10 +338,6 @@
 			[
 				"like",
 				"likeb"
-			],
-			[
-				"empla",
-				"emplace(${1:});"
 			],
 			[
 				"query",
@@ -270,10 +378,6 @@
 			[
 				"vec",
 				"vector<int> "
-			],
-			[
-				"IN",
-				"INT_MIN"
 			],
 			[
 				"laz",
@@ -336,20 +440,8 @@
 				"tmpmn"
 			],
 			[
-				"z",
-				"zzcodestarter\tc++ starting with test case."
-			],
-			[
 				"pp",
 				"pop_back();"
-			],
-			[
-				"co",
-				"cout<<${1:}<<'${2:\\n}';"
-			],
-			[
-				"update",
-				"updateElement"
 			],
 			[
 				"cuot",
@@ -366,10 +458,6 @@
 			[
 				"j-co",
 				"j-co2"
-			],
-			[
-				"sum",
-				"suma"
 			],
 			[
 				"INT_M",
@@ -394,10 +482,6 @@
 			[
 				"node",
 				"myNode"
-			],
-			[
-				"vis",
-				"visited"
 			],
 			[
 				"wah",
@@ -430,90 +514,6 @@
 			[
 				"curm",
 				"curmx"
-			],
-			[
-				"LL",
-				"LLONG_MAX"
-			],
-			[
-				"whatis",
-				"whatis2"
-			],
-			[
-				"sro",
-				"sort(${1:v}.begin(),${1:v}.end());"
-			],
-			[
-				"socr",
-				"score"
-			],
-			[
-				"only",
-				"onlysc"
-			],
-			[
-				"SOR",
-				"sort(${1:v}.begin(),${1:v}.end(),greater<${2:int}>());"
-			],
-			[
-				"eme",
-				"emplace_back(${1:});"
-			],
-			[
-				"L",
-				"LLONG_MAX"
-			],
-			[
-				"c",
-				"clear();"
-			],
-			[
-				"MI",
-				"LLONG_MIN"
-			],
-			[
-				"ps",
-				"push_back(${1:});"
-			],
-			[
-				"righ",
-				"right"
-			],
-			[
-				"right",
-				"rightsum"
-			],
-			[
-				"cot",
-				"vector<int> "
-			],
-			[
-				"um",
-				"unmatch"
-			],
-			[
-				"vce",
-				"vector<int> "
-			],
-			[
-				"COUT",
-				"cout<<${1:}<<'${2:\\n}';"
-			],
-			[
-				"linene",
-				"lineneg"
-			],
-			[
-				"cotu",
-				"cout<<${1:}<<'${2:\\n}';"
-			],
-			[
-				"rem",
-				"reml"
-			],
-			[
-				"e",
-				"end()"
 			]
 		]
 	},
@@ -523,24 +523,74 @@
 			"file": "AA.cpp",
 			"settings":
 			{
-				"buffer_size": 3272,
+				"buffer_size": 2535,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/CompititiveProgramming/BFS_DFS/implementation/BFS_graph.cpp",
+			"file": "/D/Projects/CompititiveProgramming/BFS_DFS/implementation/DFS_graph_Simple.cpp",
 			"settings":
 			{
-				"buffer_size": 2207,
+				"buffer_size": 2535,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// Created by KHALED MOSHARRAF PARVEZ\n#include <bits/stdc++.h>\n\n#define whatis1(x) cout<<#x<<\"=\"<<x<<'\\n'\n#define whatis2(x,y) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<'\\n'\n#define whatis3(x,y,z) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<\",\"<<#z<<\"=\"<<z<<'\\n'\n#define whatisArray(arr,n) cout<<#arr<<\", Size: \"<<n<<'\\n';for(int m=0;m<n;m++)  cout<<arr[m]<<\" \";cout<<'\\n';\n#define whatArray2D(arr,m,n) cout<<#arr<<\", Size: \"<<m<<\",\"<<n<<'\\n';for(int mm=0;mm<m;mm++){for(int nn=0;nn<n;nn++)cout<<arr[mm][nn]<<\" \";cout<<'\\n';} \n#define caseprint(caseno,ans) cout<<\"Case \"<<caseno<<\": \"<<ans<<'\\n'\n#define endl '\\n'\n#define all(v) v.begin(),v.end()\n\nusing namespace std;\nusing ll = long long;\nconstexpr ll mod = 1000000007;\nconstexpr int MX = 200005;\n\nvoid modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}\nll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }\nll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }\nll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }\nll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}\nll modinverse(ll x){return modpow(x,mod-2);}\nll moddiv(ll x, ll y){return modmul(x,modinverse(y));}\n\n#define int long long\n\n// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.\n\nvector<int> v(MX*100LL);\nvoid solve(int caseno){\n    int n,l,r;\n    cin>>n>>l>>r;\n    for(int i=1;i<=n;i++) {\n        cin>>v[i];\n    }\n    int lim = n*100;\n    int h = 1;\n    int xr  = 0;\n   \n    for(int i=n+1; i<=lim; i++) {\n        int hh = i/2;\n        while(h<=hh){\n            xr^=v[h];\n            h++;\n        }\n        v[i] = xr;\n    }\n    vector<int> cur;\n    cur.push_back(v.back());\n    for(int i=lim-3*n+1; i<=lim; i++) {\n        cur.push_back(v[i]);\n    }   \n\n\n  //  whatisArray(v,lim+1);\n  //  whatisArray(cur,cur.size());\n    if(l<=lim){\n        cout<<v[l]<<'\\n';return;\n    }\n    int rem = l%(n+n);\n    cout<<cur[rem]<<'\\n';\n\n\n    \n    return;\n    \n}\nmain()\n{\n    ios::sync_with_stdio(0);\n    int cases,caseno=0;\n    cin>>cases;\n    while(cases--){\n        solve(++caseno);\n    }\n    return 0;\n}   ",
+			"settings":
+			{
+				"buffer_size": 2209,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/CompititiveProgramming/BFS_DFS/implementation/dfs_graph.cpp",
+			"settings":
+			{
+				"buffer_size": 3492,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "অনলাইন ব্যাচ কোর্স বিবরণী:\n\nবেসিক টেস্ট: ০২ সেট\nডেইলি এক্সাম: ২০০ সেট\nউইকলি এক্সাম: ৬৬ সেট\nমান্থলি এক্সাম: ১৪ সেট\nসাবজেক্ট ফাইনাল: ০৯ সেট\nফাইনাল মডেল টেস্ট: ১০ সেট\nসার্বক্ষণিক (২৪/৭) Q & A সেবা\n\nঅনলাইন ব্যাচ কোর্স বিবরণী:\n\nবেসিক ক্লাস: ০৪টি\nলেকচার ক্লাস: ১০০টি\nপ্রশ্নব্যাংক মাস্টার ক্লাস: ৩৫০+\nবেসিক টেস্ট: ০২ সেট\nডেইলি এক্সাম: ২০০ সেট\nউইকলি এক্সাম: ৬৬ সেট\nমান্থলি এক্সাম: ১৪ সেট\nসাবজেক্ট ফাইনাল: ০৯ সেট\nফাইনাল মডেল টেস্ট: ১০ সেট\n\nকোর্স শুরু: ১৫ ফেব্রুয়ারি, ২০২৫\nকোর্স বিবরণী:\n\nবেসিক ক্লাস: ০৪টি\nরেগুলার ক্লাস: ১০০টি\nপ্রশ্নব্যাংক মাস্টার ক্লাস: ৩৫০+\nবেসিক টেস্ট: ০২ সেট\nডেইলি এক্সাম: ২০০ সেট\nপ্রতিটি ক্লাসের রিপ্লে ভিডিও\nসার্বক্ষণিক (২৪/৭) Q & A সেবা",
+			"settings":
+			{
+				"buffer_size": 650,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// Created by KHALED MOSHARRAF PARVEZ\n#include <bits/stdc++.h>\n\n#define whatis1(x) cout<<#x<<\"=\"<<x<<'\\n'\n#define whatis2(x,y) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<'\\n'\n#define whatis3(x,y,z) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<\",\"<<#z<<\"=\"<<z<<'\\n'\n#define whatisArray(arr,n) cout<<#arr<<\", Size: \"<<n<<'\\n';for(int m=0;m<n;m++)  cout<<arr[m]<<\" \";cout<<'\\n';\n#define whatArray2D(arr,m,n) cout<<#arr<<\", Size: \"<<m<<\",\"<<n<<'\\n';for(int mm=0;mm<m;mm++){for(int nn=0;nn<n;nn++)cout<<arr[mm][nn]<<\" \";cout<<'\\n';} \n#define caseprint(caseno,ans) cout<<\"Case \"<<caseno<<\": \"<<ans<<'\\n'\n#define endl '\\n'\n#define all(v) v.begin(),v.end()\n\nusing namespace std;\nusing ll = long long;\nconstexpr ll mod = 1000000007;\nconstexpr int MX = 100005;\n\nvoid modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}\nll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }\nll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }\nll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }\nll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}\nll modinverse(ll x){return modpow(x,mod-2);}\nll moddiv(ll x, ll y){return modmul(x,modinverse(y));}\n\n#define int long long\n\n// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.\n\nvoid solve(int caseno){\n    int n;\n    cin>>n;\n    vector<int> v(n+5);\n    for(int i=1;i<=n;i++) {\n        cin>>v[i];\n    }\n    int x; cin>>x;\n    if(x<0){\n        x = -x;\n        for(int i=1; i<=n; i++) {\n            v[i] = -v[i];\n        }\n    }\n    for(int i=1; i<=n; i++) {\n        v[i] = v[i]-x;\n    }\n    int pre[n+5];\n    pre[0] = 0;\n    for(int i=1; i<=n+1; i++) {\n        pre[i] = pre[i-1]+v[i];\n    }\n    whatisArray(pre,n+1);\n    set<pair<int,int> >st;\n    st.emplace(1e9+5,n+1);\n    int dp[n+5];\n    dp[n+1] = 0;\n    for(int i=n; i>=1; i--) {\n        int cur = pre[i-1];\n   //     whatis1(cur);\n     //   whatisArray(val,val.size());\n      //  whatisArray(ind,ind.size());\n        auto[val,nxt] = *st.lower_bound(make_pair(cur,-1e9));\n     //   whatisArray(val,val.size());\n     //   whatis3(cur,nxt,ind[nxt]);\n        if(nxt>n){\n            dp[i] = max(1LL,dp[i+1]);\n            continue;\n        }\n        dp[i] = max(dp[i+1],dp[nxt]+1LL);\n        int nw = pre[i+1]+(val-cur);\n    \n        while((*st.begin()).first <=nw){\n            st.erase(st.begin());;\n        }\n        st.emplace(nw,i);\n    }\n    int ans = dp[1];\n    cout<<ans<<'\\n';\n    \n    return;\n    \n}\nmain()\n{\n    ios::sync_with_stdio(0);\n    int cases,caseno=0;\n    cin>>cases;\n    while(cases--){\n        solve(++caseno);\n    }\n    return 0;\n}               ",
+			"settings":
+			{
+				"buffer_size": 2734,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// Created by KHALED MOSHARRAF PARVEZ\n#include <bits/stdc++.h>\n\n#define whatis1(x) cout<<#x<<\"=\"<<x<<'\\n'\n#define whatis2(x,y) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<'\\n'\n#define whatis3(x,y,z) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<\",\"<<#z<<\"=\"<<z<<'\\n'\n#define whatisArray(arr,n) cout<<#arr<<\", Size: \"<<n<<'\\n';for(int m=0;m<n;m++)  cout<<arr[m]<<\" \";cout<<'\\n';\n#define whatArray2D(arr,m,n) cout<<#arr<<\", Size: \"<<m<<\",\"<<n<<'\\n';for(int mm=0;mm<m;mm++){for(int nn=0;nn<n;nn++)cout<<arr[mm][nn]<<\" \";cout<<'\\n';} \n#define caseprint(caseno,ans) cout<<\"Case \"<<caseno<<\": \"<<ans<<'\\n'\n#define endl '\\n'\n#define all(v) v.begin(),v.end()\n\nusing namespace std;\nusing ll = long long;\nconstexpr ll mod = 1000000007;\nconstexpr int MX = 500000;\n\nvoid modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}\nll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }\nll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }\nll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }\nll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}\nll modinverse(ll x){return modpow(x,mod-2);}\nll moddiv(ll x, ll y){return modmul(x,modinverse(y));}\n\n#define int long long\n\n// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.\nclass myNode\n{\npublic:\n    int val,ind;\npublic:    \n    myNode(){\n        val= 0;ind=0;\n    }\n    myNode(int tval,int tind){\n        val= tval;\n        ind=tind;\n    }\n    void print(){\n        cout<<val<<\" \"<<ind<<'\\n';\n    }\n};\n\nclass SegmentTree {\nprivate:\n    vector<myNode> tree;\n    vector<int> nums;\n    myNode marge(myNode left,myNode right){\n        if(left.val>=right.val){\n            return left;\n        }\n        else{\n           return right; \n        }  \n    }\n    void build(int node, int start, int end) {\n        if (start == end) {\n            tree[node] = myNode(nums[start],start);\n        } else {\n            int mid = (start + end) / 2;\n            build(2 * node, start, mid);\n            build(2 * node + 1, mid + 1, end);\n            tree[node] = marge(tree[2 * node] , tree[2 * node + 1]);\n        }\n    }\n\n    void update(int node, int start, int end, int index, int newValue) {\n        if (start == end) {\n            nums[index] = newValue;\n            tree[node] = myNode(nums[index],index);\n        } else {\n            int mid = (start + end) / 2;\n            if (start <= index && index <= mid) {\n                update(2 * node, start, mid, index, newValue);\n            } else {\n                update(2 * node + 1, mid + 1, end, index, newValue);\n            }\n            tree[node] = marge(tree[2 * node] , tree[2 * node + 1]);\n        }\n    }\n\npublic:\n    SegmentTree() {\n    }\n    SegmentTree(vector<int>& arr) {\n        int n = arr.size();\n        nums = arr;\n        tree.resize(4 * n);\n        build(1, 0, n - 1);\n    }\n\n    myNode query(int node, int start, int end, int l, int r) {\n        if (r < start || end < l) {\n            return myNode(-2e9,-1);\n        }\n        if (l <= start && end <= r) {\n            return tree[node];\n        }\n        int mid = (start + end) / 2;\n        myNode leftSum = query(2 * node, start, mid, l, r);\n        myNode rightSum = query(2 * node + 1, mid + 1, end, l, r);\n        return marge(leftSum,rightSum);\n    }\n\n    myNode rangeQuery(int left, int right) {\n        return query(1, 0, nums.size() - 1, left, right);\n    }\n\n    void updateElement(int index, int newValue) {\n        if (index < 0 || index >= nums.size()) {\n            return; // Index out of bounds\n        }\n        update(1, 0, nums.size() - 1, index, newValue);\n    }\n};\n\n\nvoid solve(){\n\n    SegmentTree st,st2;\n    int n,q;cin>>n>>q;\n    vector<int> arr(n);\n    vector<int> arr2(n);\n    vector<int> v(n);\n    for(int i=0;i<n;i++) {\n        cin>>v[i];\n        arr[i] = v[i];\n        arr[i] = arr[i] - i;\n    }\n    int j=0;\n    for(int i=n-1; i>=0; i--) {\n        arr2[j] = v[i];\n        arr2[j] = arr2[j]-j; \n        j++;\n    }\n    st = SegmentTree(arr);\n    st2 = SegmentTree(arr2);\n    multiset<int> ms;\n    multiset<int> ms2;\n    for(int i=0;i<n;i++){\n        auto [val,ind] = st.rangeQuery(i, n-1);\n        int tmp = val - arr[i];\n        ms.emplace(tmp);\n    } \n    for(int i=0;i<n;i++){\n        auto [val,ind] = st2.rangeQuery(i, n-1);\n        int tmp = val - arr2[i];\n        ms2.emplace(tmp);\n    } \n //   whatis2(ms.size(),ms2.size());\n  ///  whatis2(ans,ans2);\n    int res = max(*ms.rbegin(),*ms2.rbegin());\n    cout<<res<<'\\n';\n    while(q--){\n        int pos,x;\n        cin>>pos>>x;\n        pos--;\n        int pos2 = n-1 - pos;\n    //    whatis2(pos,pos2);\n        int cur = st.rangeQuery(pos,n-1).val - arr[pos];\n        int cur2 = st2.rangeQuery(pos2,n-1).val - arr2[pos2];\n  \n        auto it = ms.find(cur);\n        auto it2 = ms2.find(cur2);\n        for(auto c:ms){\n            cout<<c<<' ';   \n        }\n        cout<<'\\n';\n        for(auto c:ms2){\n            cout<<c<<' ';   \n        }\n        cout<<'\\n';\n        whatis2(cur,cur2);\n        ms.erase(it);\n        ms2.erase(it2);\n        for(auto c:ms){\n            cout<<c<<' ';   \n        }\n        cout<<'\\n';\n        for(auto c:ms2){\n            cout<<c<<' ';   \n        }\n        cout<<'\\n';\n\n        whatis2(arr[pos],arr2[pos2]);\n        arr[pos] = x-pos;\n        arr2[pos2] = x-pos2;\n        whatis2(arr[pos],arr2[pos2]);\n\n\n        st.updateElement(pos,arr[pos]);\n        st2.updateElement(pos2,arr[pos2]);\n        cur = st.rangeQuery(pos,n-1).val - arr[pos];\n        cur2 = st2.rangeQuery(pos2,n-1).val - arr2[pos2];\n        whatis2(cur,cur2);\n        ms.emplace(cur);\n        ms2.emplace(cur2);\n\n        \n        for(auto c:ms){\n            cout<<c<<' ';   \n        }\n        cout<<'\\n';\n        for(auto c:ms2){\n            cout<<c<<' ';   \n        }\n        cout<<'\\n';\n\n        int res = max(*ms.rbegin(),*ms2.rbegin());\n        cout<<res<<'\\n';\n    }\n\n    return;\n}\nmain()\n{\n    ios::sync_with_stdio(0);\n    cin.tie(0);\n    int cases;cin>>cases;\n    while(cases--){\n        solve();\n    }\n    \n    return 0;\n}       \n",
+			"settings":
+			{
+				"buffer_size": 6150,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "SELECT LOCATION_OUT, COUNT(LOCATION_OUT) as cnt FROM `DAILY_ATTENDANCE` WHERE LOCATION_IN IS NOT NULL AND DATE_OF_ATTENDANCE BETWEEN '2024-11-01' AND '2024-12-31' GROUP BY LOCATION_OUT ORder BY cnt DESC\n\n\nSELECT DISTINCT EMPLOYEE_ID,LOCATION_IN,LOCATION_OUT , COUNT( EMPLOYEE_ID) FROM `DAILY_ATTENDANCE` WHERE EMPLOYEE_ID = 10021 AND DATE_OF_ATTENDANCE BETWEEN '2024-12-01' AND '2024-12-31'  GROUP BY  EMPLOYEE_ID,LOCATION_IN,LOCATION_OUT\nORDER BY `DAILY_ATTENDANCE`.`LOCATION_IN`  ASC",
+			"settings":
+			{
+				"buffer_size": 485,
+				"line_ending": "Windows",
+				"name": "SELECT LOCATION_OUT, COUNT(LOCATION_OUT) as cnt FR"
 			}
 		},
 		{
 			"file": "inputf.in",
 			"settings":
 			{
-				"buffer_size": 7,
+				"buffer_size": 58,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -549,8 +599,7 @@
 			"file": "outputf.out",
 			"settings":
 			{
-				"buffer_size": 2,
-				"encoding": "UTF-8",
+				"buffer_size": 28,
 				"line_ending": "Windows"
 			}
 		}
@@ -668,33 +717,36 @@
 		"/D/Projects/CompititiveProgramming/BFS_DFS",
 		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation",
 		"/D/Projects/CompititiveProgramming/BinerySearch",
-		"/D/Projects/CompititiveProgramming/BIT",
-		"/D/Projects/CompititiveProgramming/CodeforcesAll",
-		"/D/Projects/CompititiveProgramming/DisjointSet",
-		"/D/Projects/CompititiveProgramming/DP",
 		"/D/Projects/CompititiveProgramming/Game",
 		"/D/Projects/CompititiveProgramming/Interactive",
 		"/D/Projects/CompititiveProgramming/LCA",
 		"/D/Projects/CompititiveProgramming/LinkedList",
 		"/D/Projects/CompititiveProgramming/Math",
 		"/D/Projects/CompititiveProgramming/Math/Combinatorics",
-		"/D/Projects/CompititiveProgramming/Math/Combinatorics/LightOJ",
 		"/D/Projects/CompititiveProgramming/Math/int_sqrt",
+		"/D/Projects/CompititiveProgramming/Math/Palindrom",
+		"/D/Projects/CompititiveProgramming/Math/PrimeFactorization",
 		"/D/Projects/CompititiveProgramming/PriorityQueue",
+		"/D/Projects/CompititiveProgramming/SegmentTree",
 		"/D/Projects/CompititiveProgramming/String",
 		"/D/Projects/CompititiveProgramming/String/Hashing",
 		"/D/Projects/CompititiveProgramming/UnorderMap_Hash_Map"
 	],
 	"file_history":
 	[
+		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_Max.cpp",
+		"/D/Projects/CompititiveProgramming/SegmentTree/RangeQueryforElementsGreaterthanK.cpp",
+		"/D/Projects/CompititiveProgramming/BinerySearch/note.txt",
+		"/D/Projects/CompititiveProgramming/CodeforcesAll/del.cpp",
+		"/D/Projects/CompititiveProgramming/CodeforcesAll/outputf.out",
+		"/D/Projects/CompititiveProgramming/Math/InverseMod/NcRmod.cpp",
+		"/D/Projects/CompititiveProgramming/Game/nimGame.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/inputf.in",
 		"/D/Projects/CompititiveProgramming/Math/Combinatorics/pasecalTriangle.cpp",
 		"/D/Projects/CompititiveProgramming/String/Trie/TrieImplementation.cpp",
 		"/D/Projects/CompititiveProgramming/LinkedList/Testing.cpp",
 		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/inlineDFSfunction.cpp",
 		"/D/Projects/CompititiveProgramming/BFS_DFS/implementation/dfs_graph.cpp",
-		"/D/Projects/CompititiveProgramming/BinerySearch/note.txt",
-		"/D/Projects/CompititiveProgramming/Math/InverseMod/NcRmod.cpp",
 		"/D/Projects/CompititiveProgramming/PrefixSum/Trick_2D/gridPrefixSum.cpp",
 		"/D/Projects/CompititiveProgramming/BIT/bit.cpp",
 		"/D/Projects/CompititiveProgramming/String/Hashing/dubbleHasshing.cpp",
@@ -709,7 +761,6 @@
 		"/D/Projects/CompititiveProgramming/DP/DigitDp/HowManyZeroes.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/lazy_min_max_perfect.cpp",
 		"/D/Projects/CompititiveProgramming/String/kmp.cpp",
-		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_Max.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/__margeFunctionSegmentTree.cpp",
 		"/D/Projects/CompititiveProgramming/String/inputf.in",
 		"/D/Projects/CompititiveProgramming/String/outputf.out",
@@ -720,7 +771,6 @@
 		"/C/Users/user/OneDrive/Desktop/delete.html",
 		"/D/Projects/CompititiveProgramming/SegmentTree/lazySum_Min_both.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/RangeSumQueryUpdate.cpp",
-		"/D/Projects/CompititiveProgramming/Game/nimGame.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/hack.cpp",
 		"/D/Projects/CompititiveProgramming/String/rabin_karp.cpp",
 		"/D/Projects/CompititiveProgramming/DP/DigitDp/digitdp.cpp",
@@ -728,7 +778,6 @@
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/other.cpp",
 		"/D/Projects/CompititiveProgramming/DisjointSet/disjointset.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/ref.cpp",
-		"/D/Projects/CompititiveProgramming/CodeforcesAll/del.cpp",
 		"/D/Projects/CompititiveProgramming/Math/PrimeFactorization/primefactorization.cpp",
 		"/D/Projects/CompititiveProgramming/Math/number_of_prime_factors_for_all_1_to_N.cpp",
 		"/D/Projects/CompititiveProgramming/CodeforcesAll/ex.cpp",
@@ -737,7 +786,6 @@
 		"/C/Users/user/AppData/Roaming/Sublime Text 3/Installed Packages/Package Control.sublime-package",
 		"/C/Users/user/OneDrive/Desktop/sublimeSettings/Preferences.sublime-settings",
 		"/D/Projects/CompititiveProgramming/SegmentTree/min_max_index_with_single_update.cpp",
-		"/D/Projects/CompititiveProgramming/CodeforcesAll/outputf.out",
 		"/D/Projects/CompititiveProgramming/PBDS_tree_order/find_kth_element_fast.cpp",
 		"/D/Projects/CompititiveProgramming/PBDS_tree_order/almostsimiler_but_fast.cpp",
 		"/D/Projects/CompititiveProgramming/SegmentTree/nodeUpdateSegmentTree.cpp",
@@ -813,18 +861,18 @@
 		"/D/CompititiveProgramming/LCA/LightOJ/ASecretMission.cpp",
 		"/D/CompititiveProgramming/LCA/LCA_SPOJ.cpp",
 		"/D/CompititiveProgramming/LCA/SparseTable.cpp",
-		"/D/CompititiveProgramming/inputf.in",
-		"/D/CompititiveProgramming/PriorityQueue/outputf.out"
+		"/D/CompititiveProgramming/inputf.in"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
 		"height": 107.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -832,6 +880,40 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"MAXX",
+			"data",
+			"];\n",
+			"testn",
+			"testarr",
+			"found",
+			"int",
+			");\n",
+			"\");\n",
+			"\");",
+			"RBG",
+			"\");\n",
+			"\");",
+			"join",
+			"find",
+			"element",
+			"par",
+			"SegmentTree",
+			"reverse",
+			"pos",
+			"1e9",
+			"]);\n",
+			"v",
+			"two",
+			"n.size()",
+			"ind",
+			"n",
+			"''; ",
+			" \n",
+			"v[i]",
+			"// Created by KHALED MOSHARRAF PARVEZ\n#include <bits/stdc++.h>\n\n#define whatis1(x) cout<<#x<<\"=\"<<x<<'\\n'\n#define whatis2(x,y) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<'\\n'\n#define whatis3(x,y,z) cout<<#x<<\"=\"<<x<<\",\"<<#y<<\"=\"<<y<<\",\"<<#z<<\"=\"<<z<<'\\n'\n#define whatisArray(arr,n) cout<<#arr<<\", Size: \"<<n<<'\\n';for(int m=0;m<n;m++)  cout<<arr[m]<<\" \";cout<<'\\n';\n#define whatArray2D(arr,m,n) cout<<#arr<<\", Size: \"<<m<<\",\"<<n<<'\\n';for(int mm=0;mm<m;mm++){for(int nn=0;nn<n;nn++)cout<<arr[mm][nn]<<\" \";cout<<'\\n';} \n#define caseprint(caseno,ans) cout<<\"Case \"<<caseno<<\": \"<<ans<<'\\n'\n#define endl '\\n'\n#define all(v) v.begin(),v.end()\n\nusing namespace std;\nusing ll = long long;\nconstexpr ll mod = 1000000007;\nconstexpr int MX = 200005;\n\nvoid modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}\nll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }\nll modadd(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x+y)%mod; }\nll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(x); return x; }\nll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}\nll modinverse(ll x){return modpow(x,mod-2);}\nll moddiv(ll x, ll y){return modmul(x,modinverse(y));}\n\n#define int long long\n\n// try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.\n\nvoid solve(int caseno){\n    int n;\n    cin>>n;\n    vector<int> v(n);\n    for(int i=0;i<n;i++) {\n        cin>>v[i];\n    }\n    int mx = 0;\n    if(v[0]!=v[1])mx = 2;\n    else mx = 3;\n    int ans = mx + (n-2LL)*2LL;\n    cout<<ans<<'\\n';\n    \n    return;\n    \n}\nmain()\n{\n    ios::sync_with_stdio(0);\n    int cases,caseno=0;\n    cin>>cases;\n    while(cases--){\n        solve(++caseno);\n    }\n    return 0;\n}       ",
+			"v[i]",
+			"pow",
+			"rng",
 			"iPair",
 			"askToTest",
 			"Trie",
@@ -925,41 +1007,7 @@
 			"ll",
 			"MAX",
 			"combine",
-			"lc",
-			"long long",
-			"rr",
-			"trn",
-			"mn",
-			"3",
-			"2",
-			"1",
-			"__FILE__",
-			"NEAL_DEBUG",
-			"ll",
-			"MX",
-			"];\n",
-			"ll",
-			"second",
-			"first",
-			"1e6",
-			"1e5",
-			"=",
-			"0",
-			"ll",
-			"getSum",
-			"constSegTree",
-			"lim",
-			"whatis",
-			"whatis1",
-			"whatis",
-			"tocheck",
-			";\n",
-			"int",
-			"cnt",
-			"emplace",
-			"primesquare",
-			"hasCycle",
-			"k"
+			"lc"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -967,6 +1015,20 @@
 		"regex": false,
 		"replace_history":
 		[
+			"MX",
+			"node",
+			"n",
+			"Y",
+			"find2",
+			"par2",
+			"curpos",
+			"2e9",
+			"n",
+			"r",
+			"x",
+			"k",
+			"n",
+			"powr",
 			"ask",
 			"TrieNode",
 			"cur",
@@ -1080,21 +1142,7 @@
 			"queryMaxSegTree",
 			"buildMaxSegTree",
 			"updateMinSegTree",
-			"queryMinSegTree",
-			"buildMinSegTree",
-			"max_buildSegmentTree",
-			"indx",
-			"value",
-			"prezero",
-			"preone",
-			"int",
-			"long long",
-			"Int22",
-			"int",
-			"Int22 ",
-			"int",
-			"long long",
-			"ll"
+			"queryMinSegTree"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1105,7 +1153,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1114,15 +1162,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3272,
+						"buffer_size": 2535,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2365,
-								2365
+								1635,
+								1635
 							]
 						],
 						"settings":
@@ -1132,27 +1180,56 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1692.0,
+						"translation.y": 701.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Projects/CompititiveProgramming/BFS_DFS/implementation/DFS_graph_Simple.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1979,
+								1979
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 704.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/D/Projects/CompititiveProgramming/BFS_DFS/implementation/BFS_graph.cpp",
-					"semi_transient": true,
+					"buffer": 2,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2207,
+						"buffer_size": 2209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1224,
-								492
+								2209,
+								2209
 							]
 						],
 						"settings":
@@ -1162,7 +1239,186 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 152.0,
+						"translation.y": 938.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Projects/CompititiveProgramming/BFS_DFS/implementation/dfs_graph.cpp",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1831,
+								1620
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								591,
+								591
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2572,
+								2572
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 47.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								6150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2711.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								485,
+								485
+							]
+						],
+						"settings":
+						{
+							"auto_name": "SELECT LOCATION_OUT, COUNT(LOCATION_OUT) as cnt FR",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "inputf.in",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1175,54 +1431,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
-					"file": "inputf.in",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6,
-								6
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 3,
+					"buffer": 9,
 					"file": "outputf.out",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2,
+						"buffer_size": 28,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								4,
+								4
 							]
 						],
 						"settings":
@@ -1233,7 +1455,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1241,7 +1463,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1273,20 +1495,20 @@
 		"cols":
 		[
 			0.0,
-			0.675058874749,
+			0.717073170731,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.452506596306,
+			0.598130841121,
 			1.0
 		]
 	},
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 94.0
+		"height": 116.0
 	},
 	"output.find_results":
 	{
@@ -1296,7 +1518,7 @@
 	"project": "myProj.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1355,7 +1577,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 177.0,
+	"side_bar_width": 250.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
