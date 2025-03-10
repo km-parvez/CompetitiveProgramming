@@ -22,7 +22,7 @@ ll modsub(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); x -= y; modnor(
 ll modpow(ll b, ll p) { ll r = 1; while(p) {if(p&1) r = modmul(r, b); b = modmul(b, b);p >>= 1;}return r;}
 ll modinverse(ll x){return modpow(x,mod-2);}
 ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
-
+ 
 #define int long long
 
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
