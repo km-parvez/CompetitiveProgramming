@@ -13,7 +13,7 @@
 using namespace std;
 using ll = long long;
 constexpr ll mod = 1000000007;
-constexpr int MX = 200005;
+constexpr int MX = 200009;
 
 void modnor(ll &x) {x %= mod; if(x < 0)(x += mod);}
 ll modmul(ll x, ll y) { x %= mod, y %= mod; modnor(x),modnor(y); return (x*y)%mod; }
@@ -26,35 +26,53 @@ ll moddiv(ll x, ll y){return modmul(x,modinverse(y));}
 #define int long long
 
 // try binary search,BIT,segment tree, dp, dfs, union find, set, priority queue, sorting, two pointer, gready.
-void tobin(int n){
-    vector<int> ans;
-    while(n>0){
-        ans.push_back(n%2);
-        n/=2;
-    }
-    reverse(all(ans));
-    for(int i=0; i<ans.size(); i++) {
-        cout<<ans[i];
-    }
-    cout<<'\n';
-}
-void solve(int caseno){
-    int x,m;
-    cin>>x>>m;
-    int ans = 0;
-    int lim = m ;
-   
-    for(int i=1; i<=lim; i++) {
-        int xr = (x^i);
 
-        if((xr%x)==0 ||(xr%i)==0 ){
-            whatis3(xr,x,i);
-            ans++;
+void dfs(int par,int u, vector<vector<int>> &g,vector<int> &lvl  ){
+    for(int i=0; i<g[u].size(); i++) {
+        int v = g[u][i];
+        if(v!=par){
+            lvl[v] = lvl[u]+1;
+            dfs(u,v,g,lvl);
         }
     }
-    cout<<ans<<'\n';
     return;
+}
+
+void solve(int caseno){
+    int n,st,en;
+    cin>>n>>st>>en;
+    vector< vector<int> >g(n+1);
+    vector<int> lvl(n+1); 
+    for(int i=0; i<n+1; i++) {
+        lvl[i] = -1;
+    }
+    for(int i=0;i<n-1;i++) {
+        int u,v;
+        cin>>u>>v;
+        g[u].push_back(v);
+        g[v].push_back(u);
+    }
+    lvl[en] = 0;
+    dfs(-1,en,g,lvl);
     
+    vector<int> lvlvec[n+5];
+    for(int i=1; i<=n; i++) {
+         if(lvl[i]!=-1)  
+            lvlvec[lvl[i]].push_back(i);     
+    }
+    vector<int> ans;
+    for(int i=n; i>=1; i--) {
+        for(auto c:lvlvec[i]){
+            ans.push_back(c);
+        }
+    }       
+    ans.push_back(en);  
+    for(int i=0; i<ans.size(); i++) {
+        cout<<ans[i]<<' ';
+    }
+    cout<<'\n';
+    return;
+
 }
 main()
 {
@@ -65,4 +83,4 @@ main()
         solve(++caseno);
     }
     return 0;
-}   
+}       

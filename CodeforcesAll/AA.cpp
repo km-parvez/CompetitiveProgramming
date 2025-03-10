@@ -36,7 +36,6 @@ void solve(int caseno){
     for(int i=0;i<n;i++) {
         cin>>v[i];
     }
-    debug(n,v,v);   
     
     return;
     
@@ -51,4 +50,4 @@ main()
         solve(++caseno);
     }
     return 0;
-}       
+}           
