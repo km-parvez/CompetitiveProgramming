@@ -2,7 +2,7 @@
  
 #include <bits/stdc++.h>
  
-using namespace std;
+using namespace std; 
 
 #define whatis1(x) cerr<<#x<<"="<<x<<'\n'
 #define whatis2(x,y) cerr<<#x<<"="<<x<<","<<#y<<"="<<y<<'\n'
